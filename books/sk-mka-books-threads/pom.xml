@@ -27,8 +27,6 @@
 			<artifactId>sk-mka-books-core</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-
-		<!-- external dependency -->
 	</dependencies>
 
 
