@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap11.S221;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -17,15 +17,17 @@ package cz.heroult.pavel.java.book.Kap11.S221;
 
 class Pomocna implements Cloneable {
   double d;
-  Pomocna(double d) { this.d = d; }
+
+  Pomocna(double d) {
+    this.d = d;
+  }
 
   protected Object clone() {
     Pomocna k = null;
     try {
-      k = (Pomocna)super.clone();
+      k = (Pomocna) super.clone();
       k.d = this.d;
-    }
-    catch (CloneNotSupportedException e) {
+    } catch (CloneNotSupportedException e) {
       e.printStackTrace();
     }
     return k;
@@ -35,19 +37,22 @@ class Pomocna implements Cloneable {
 public class Hluboka implements Cloneable {
   int i;
   Pomocna dTrida;
-  Hluboka(int i, Pomocna dt) { this.i = i; dTrida = dt; }
+
+  Hluboka(int i, Pomocna dt) {
+    this.i = i;
+    dTrida = dt;
+  }
 
   protected Object clone() {
     Hluboka k = null;
     try {
-      k = (Hluboka)super.clone();
+      k = (Hluboka) super.clone();
       k.i = this.i;
-    // pomoci konstruktoru -- nedoporucuje se
+      // pomoci konstruktoru -- nedoporucuje se
       // k.dTrida = new Pomocna(dTrida.d);
-    // pomoci clone() -- univerzalni
+      // pomoci clone() -- univerzalni
       k.dTrida = (Pomocna) dTrida.clone();
-    }
-    catch (CloneNotSupportedException e) {
+    } catch (CloneNotSupportedException e) {
       e.printStackTrace();
     }
     return k;
@@ -57,11 +62,11 @@ public class Hluboka implements Cloneable {
     Pomocna p = new Pomocna(3.14);
     Hluboka kopie, orig = new Hluboka(5, p);
     kopie = (Hluboka) orig.clone();
-    System.out.println("orig: "+orig.i+"; "+orig.dTrida.d);
-    System.out.println("kopie: "+kopie.i+"; "+kopie.dTrida.d);
+    System.out.println("orig: " + orig.i + "; " + orig.dTrida.d);
+    System.out.println("kopie: " + kopie.i + "; " + kopie.dTrida.d);
     orig.i = 10;
     orig.dTrida.d = 6.28;
-    System.out.println("orig: "+orig.i+"; "+orig.dTrida.d);
-    System.out.println("kopie: "+kopie.i+"; "+kopie.dTrida.d);
+    System.out.println("orig: " + orig.i + "; " + orig.dTrida.d);
+    System.out.println("kopie: " + kopie.i + "; " + kopie.dTrida.d);
   }
 }
