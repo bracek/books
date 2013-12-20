@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/SampleAbstractFactory.java" line="5" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5ae267-bbb5-43c4-a16f-2358f801452e" name="Default" comment="" />
     <ignored path="sk-mka-books.iws" />
@@ -12,9 +15,18 @@
     <file path="/New Method Body.txt.ft" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386836596142" ignored="false" />
     <file path="/Implemented Method Body.txt.ft" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386836744351" ignored="false" />
     <file path="/File Header.txt.ft" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386836782229" ignored="false" />
-    <file path="/IcecreamDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386836893790" ignored="false" />
+    <file path="/IcecreamDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458256579" ignored="false" />
     <file path="/NuttyDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386837008005" ignored="false" />
     <file path="/HoneyDecoator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386837026709" ignored="false" />
+    <file path="/TestDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386938827881" ignored="false" />
+    <file path="/HoneyDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1386938853593" ignored="false" />
+    <file path="/BridgePattern.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387441252814" ignored="false" />
+    <file path="/Icecream.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458188288" ignored="false" />
+    <file path="/fragment.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458628985" ignored="false" />
+    <file path="/IcecreamDecoratorImpl.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458321937" ignored="false" />
+    <file path="/SimpleIcecream.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458363407" ignored="false" />
+    <file path="/TestDecoratorPattern.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458569407" ignored="false" />
+    <file path="/CokoladaDecorator.java" changelist="4d5ae267-bbb5-43c4-a16f-2358f801452e" time="1387458552024" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +108,126 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/SimpleIcecream.java" line="12" class="com.javapapers.designpattern.decorator.SimpleIcecream" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/NuttyDecorator.java" line="18" class="com.javapapers.designpattern.decorator.NuttyDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/NuttyDecorator.java" line="14" class="com.javapapers.designpattern.decorator.NuttyDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java" line="13" class="com.javapapers.designpattern.decorator.HoneyDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java" line="17" class="com.javapapers.designpattern.decorator.HoneyDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/IcecreamDecorator.java" line="11" class="com.javapapers.designpattern.decorator.IcecreamDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/IcecreamDecorator.java" line="15" class="com.javapapers.designpattern.decorator.IcecreamDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java" line="9" class="com.javapapers.designpattern.decorator.HoneyDecorator" package="com.javapapers.designpattern.decorator">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
@@ -107,93 +239,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Rovnost.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S223/Rovnost.java">
+      <file leaf-file-name="Shark.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/Shark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="34" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+            <state line="7" column="68" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Button.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="23" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OnCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/OnCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerElectronics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/ConsumerElectronics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoundSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/SoundSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Television.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Television.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoCommandPattern.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/DemoCommandPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="85" selection-start="723" selection-end="723" vertical-scroll-proportion="0.5">
               <folding>
-                <marker date="1386319535312" expanded="true" signature="1024:1045" placeholder="{...}" />
+                <element signature="e#539#560#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Potomek.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S216/Potomek.java">
+      <file leaf-file-name="MuteAllCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/MuteAllCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
+            <state line="7" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Klon2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S219/Klon2.java">
+      <file leaf-file-name="UniversalRemote.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/UniversalRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Icecream.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/Icecream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleIcecream.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/SimpleIcecream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="270" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IcecreamDecorator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/IcecreamDecorator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NuttyDecorator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/NuttyDecorator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HoneyDecorator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDecorator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/TestDecorator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="37" selection-start="324" selection-end="324" vertical-scroll-proportion="0.28337532">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Klon1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S218/Klon1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -209,28 +341,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S211/Potomek.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S220/Melka.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S221/Hluboka.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S223/Rovnost.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S216/Potomek.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S218/Klon1.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S215/Potomek.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/Icecream.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/SimpleIcecream.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/IcecreamDecorator.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/NuttyDecorator.java" />
-        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecoator.java" />
         <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java" />
         <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/TestDecorator.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/factory/SampleFactoryMethod.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/bridge/BridgePattern.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/Icecream.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/Icecream.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/IcecreamDecorator.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/IcecreamDecoratorImpl.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/NutsoDecorator.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/SimpleIcecream.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/BaseIcecream.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/CokoladaDecorator.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/TestDecoratorPattern.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/afe/OriesokDecorator.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/SampleAbstractFactory.java" />
+        <option value="$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/DemoCommandPattern.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
     <option name="y" value="1" />
-    <option name="width" value="1901" />
-    <option name="height" value="1200" />
+    <option name="width" value="1920" />
+    <option name="height" value="1181" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -337,36 +471,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk-mka-books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk-mka-books-patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -395,40 +499,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="designpattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk-mka-books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk-mka-books-patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="designpattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,12 +511,13 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/infotel/servers/servers-master" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -457,15 +528,20 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.TestDecorator">
-    <configuration default="false" name="Melka" type="Application" factoryName="Application" temporary="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javapapers.designpattern.afe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DemoCommandPattern">
+    <configuration default="false" name="ImplementComposite" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cz.heroult.pavel.java.book.Kap11.S220.*" />
+          <option name="PATTERN" value="com.javapapers.designpattern.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="cz.heroult.pavel.java.book.Kap11.S220.Melka" />
+      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.composite.ImplementComposite" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -474,20 +550,20 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sk-mka-books-heroult" />
+      <module name="sk-mka-books-patterns" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Hluboka" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="BridgePattern" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cz.heroult.pavel.java.book.Kap11.S221.*" />
+          <option name="PATTERN" value="com.javapapers.designpattern.bridge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="cz.heroult.pavel.java.book.Kap11.S221.Hluboka" />
+      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.bridge.BridgePattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -496,20 +572,20 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sk-mka-books-heroult" />
+      <module name="sk-mka-books-patterns" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Rovnost" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="TestDecoratorPattern" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cz.heroult.pavel.java.book.Kap11.S223.*" />
+          <option name="PATTERN" value="com.javapapers.designpattern.afe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="cz.heroult.pavel.java.book.Kap11.S223.Rovnost" />
+      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.afe.TestDecoratorPattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -518,26 +594,20 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sk-mka-books-heroult" />
+      <module name="sk-mka-books-patterns" />
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Potomek" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="SampleAbstractFactory" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cz.heroult.pavel.java.book.Kap11.S226.*" />
+          <option name="PATTERN" value="com.javapapers.designpattern.abstractfactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="cz.heroult.pavel.java.book.Kap11.S226.Potomek" />
+      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.abstractfactory.SampleAbstractFactory" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -546,20 +616,20 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sk-mka-books-heroult" />
+      <module name="sk-mka-books-patterns" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestDecorator" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="DemoCommandPattern" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.javapapers.designpattern.decorator.*" />
+          <option name="PATTERN" value="com.javapapers.designpattern.command.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.decorator.TestDecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.javapapers.designpattern.command.DemoCommandPattern" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -666,19 +736,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Melka" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Hluboka" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Rovnost" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Potomek" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestDecorator" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ImplementComposite" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BridgePattern" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestDecoratorPattern" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SampleAbstractFactory" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DemoCommandPattern" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestDecorator" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Rovnost" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Potomek" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Hluboka" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Melka" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DemoCommandPattern" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SampleAbstractFactory" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestDecoratorPattern" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BridgePattern" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ImplementComposite" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -713,15 +783,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="1" width="1901" height="1200" extended-state="6" />
-    <editor active="false" />
+    <frame x="1920" y="1" width="1920" height="1181" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923224" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39868048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -734,12 +805,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2522911" sideWeight="0.79453343" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20546654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.73800385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.73800385" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26199615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -808,121 +878,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S213/Potomek.java">
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/SeaFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S220/Melka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="24" selection-start="1205" selection-end="1210" vertical-scroll-proportion="0.0">
+        <state line="2" column="13" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S221/Hluboka.java">
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/LandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="15" selection-start="1475" selection-end="1485" vertical-scroll-proportion="0.0">
+        <state line="3" column="13" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/AnimalFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="73" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/SampleAbstractFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/Wonderland.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/abstractfactory/Shark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="68" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/UniversalRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/ConsumerElectronics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/SoundSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Television.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/OnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/MuteAllCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/command/DemoCommandPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="85" selection-start="723" selection-end="723" vertical-scroll-proportion="0.5">
           <folding>
-            <marker date="1386318814247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1386318814247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1386318814247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1386318814247" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1386318814247" expanded="true" signature="-1:-1" placeholder="//..." />
+            <element signature="e#539#560#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S226/Potomek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="23" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S225/Hash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="1005" selection-end="1012" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S223/Rovnost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1386319535312" expanded="true" signature="1024:1045" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S218/Klon1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S216/Potomek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S219/Klon2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-heroult/src/main/java/cz/heroult/pavel/java/book/Kap11/S215/Potomek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="94" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/SimpleIcecream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="270" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/NuttyDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/IcecreamDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/Icecream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/HoneyDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sk-mka-books-patterns/src/main/java/com/javapapers/designpattern/decorator/TestDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="37" selection-start="324" selection-end="324" vertical-scroll-proportion="0.28337532">
-          <folding />
         </state>
       </provider>
     </entry>
