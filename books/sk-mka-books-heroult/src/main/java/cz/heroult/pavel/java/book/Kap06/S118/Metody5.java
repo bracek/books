@@ -16,11 +16,13 @@ package cz.heroult.pavel.java.book.Kap06.S118;
 /////////////////////////////////////////////////////////////////
 
 public class Metody5 {
-	static double secti(int a, double b) {
+	static double secti(final int a,
+final  double b) {
 		return a + b;
 	}
 
-	static int secti(int a, int b) { // p�et�en� metoda secti()
+	static int secti(final int a,
+final  int b) { // p�et�en� metoda secti()
 		return a + b;
 	}
 

@@ -24,7 +24,7 @@ public class Fakt {
 		}
 	}
 
-	public static long faktCykl(long n) {
+	public static long faktCykl(final long n) {
 		long f = 1;
 		for (; n > 1; n--)
 			f *= n;

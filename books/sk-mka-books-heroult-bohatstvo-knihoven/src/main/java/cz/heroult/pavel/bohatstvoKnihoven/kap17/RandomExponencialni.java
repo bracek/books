@@ -20,7 +20,7 @@ import java.util.*;
 
 class Exp {
   static Random r = new Random();
-  static double exp(double lambda) {
+  static double exp(final double lambda) {
     double pom;
     do {
       pom = r.nextDouble();

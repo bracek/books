@@ -16,7 +16,8 @@ package cz.heroult.pavel.java.book.Kap10.S202;
 /////////////////////////////////////////////////////////////////
 class PraceSPolem {
 
-	public void nastavPole(final int[] p, final int h) {
+	public void nastavPole(final int[] p,
+ final int h) {
 		for (int i = 0; i < p.length; i++) {
 			p[i] = h + i;
 		}
@@ -31,7 +32,8 @@ class PraceSPolem {
 		System.out.print("\b\b \n");
 	}
 
-	public void nastavPrvek(int prvek, final int h) {
+	public void nastavPrvek(final int prvek,
+ final int h) {
 		prvek = h;
 	}
 }

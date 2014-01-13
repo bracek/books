@@ -19,7 +19,8 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap11;
 import java.util.*;
 
 public class FrekvenceSlovVMape {
-  static void cetnost(Map<String, Integer> m) {
+  static void cetnost(final Map<String,
+final  Integer> m) {
     String[] s = {"lesni", "vily", "vence", "vily", "a", "psi",
                   "z", "vily", "na", "ne", "vyli"};
     for (int i = 0;  i < s.length;  i++) {

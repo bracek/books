@@ -13,7 +13,7 @@ public class ArraysPlneniSerazeniAVyhledavani {
     System.out.println();
   }
 
-  static void najdi(int hodnota) {
+  static void najdi(final int hodnota) {
     int k = Arrays.binarySearch(pole, hodnota);
     System.out.print("[" + k + "]=" + hodnota);
     if (k < 0) {

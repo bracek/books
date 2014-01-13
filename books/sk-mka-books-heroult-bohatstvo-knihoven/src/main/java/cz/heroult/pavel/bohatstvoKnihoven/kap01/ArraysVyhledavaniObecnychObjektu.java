@@ -60,7 +60,7 @@ public class ArraysVyhledavaniObecnychObjektu {
         }
     }
 
-    static void najdi(double vaha) {
+    static void najdi(final double vaha) {
         Person os = new Person(0, vaha, "nedulezite");
         int k = Arrays.binarySearch(poleOsob, os,
                 new KomparatorPersonPodleVahy());

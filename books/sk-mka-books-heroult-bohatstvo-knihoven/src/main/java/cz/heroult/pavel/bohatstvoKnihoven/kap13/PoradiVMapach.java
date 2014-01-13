@@ -21,7 +21,8 @@ import java.util.*;
 public class PoradiVMapach {
   private static String[] pole = {"1", "6", "2", "5", "4", "3"};
 
-  static void nastaveniATisk(Map<String, String> m) {
+  static void nastaveniATisk(final Map<String,
+final  String> m) {
     for (int i = 0; i < pole.length;  i++) {
       m.put(pole[i], "A");
     }

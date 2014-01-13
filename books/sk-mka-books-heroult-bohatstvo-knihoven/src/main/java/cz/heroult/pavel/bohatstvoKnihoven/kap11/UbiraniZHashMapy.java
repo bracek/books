@@ -41,7 +41,8 @@ class HashoVaha {
 }
 
 public class UbiraniZHashMapy {
-  static void naplneniMapyATisk(HashMap<String, HashoVaha> hm) {
+  static void naplneniMapyATisk(final HashMap<String,
+final  HashoVaha> hm) {
     hm.clear();
     for (int i = 1;  i <= 4;  i++) {
       String jmeno = "Robot" + i;

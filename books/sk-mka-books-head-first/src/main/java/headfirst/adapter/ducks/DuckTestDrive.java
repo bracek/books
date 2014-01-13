@@ -18,7 +18,7 @@ public class DuckTestDrive {
 		testDuck(turkeyAdapter);
 	}
  
-	static void testDuck(Duck duck) {
+	static void testDuck(final Duck duck) {
 		duck.quack();
 		duck.fly();
 	}

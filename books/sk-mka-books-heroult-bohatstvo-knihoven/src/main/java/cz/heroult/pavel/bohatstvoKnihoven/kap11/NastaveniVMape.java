@@ -23,7 +23,7 @@ public class NastaveniVMape {
   private static String[] hodDef = {"bila", "cerna", "modra"};
   private static String[] hodUziv = {null, "modra", "cervena"};
 
-  static Map<String, String> options(String[] hodnoty) {
+  static Map<String, String> options(final String[] hodnoty) {
     Map<String, String> m = new HashMap<String, String>();
     for (int i = 0;  i < key.length;  i++) {
       if (hodnoty[i] != null) {

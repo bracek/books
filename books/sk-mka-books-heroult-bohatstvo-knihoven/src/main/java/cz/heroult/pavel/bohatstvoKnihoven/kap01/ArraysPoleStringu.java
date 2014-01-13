@@ -13,7 +13,7 @@ public class ArraysPoleStringu {
     System.out.println();
   }
 
-  static void najdi(String hodnota) {
+  static void najdi(final String hodnota) {
     int k = Arrays.binarySearch(pole, hodnota);
     System.out.print("[" + k + "]=" + hodnota);
     if (k < 0) {

@@ -47,7 +47,8 @@ class Hrusticka implements Comparable<Hrusticka> {
 }
 
 public class HruskyVMnozine {
-  static void praceSHrustickami(String typ, Set<Hrusticka> st) {
+  static void praceSHrustickami(final String typ,
+final  Set<Hrusticka> st) {
     for (int i = 20;  i < 30;  i++) {
       st.add(new Hrusticka(i));
     }

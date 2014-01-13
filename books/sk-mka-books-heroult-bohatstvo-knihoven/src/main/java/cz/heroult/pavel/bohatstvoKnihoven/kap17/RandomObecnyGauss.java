@@ -21,7 +21,8 @@ import java.math.*;
 
 class Gauss {
   static Random r = new Random();
-  static double gauss(double stred, double sigma) {
+  static double gauss(final double stred,
+final  double sigma) {
     double sum = 0.0;
     for (int i = 1;  i <= 12;  i++) {
       sum += r.nextDouble();

@@ -52,7 +52,8 @@ final  VahaKlic vk2) {
 }
 
 public class MujTreeMap {
-  static void praceSMapou(TreeMap<VahaKlic, String> tm) {
+  static void praceSMapou(final TreeMap<VahaKlic,
+final  String> tm) {
     String s;
     Comparator<? super VahaKlic> c = tm.comparator();
     if (c == null) {

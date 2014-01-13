@@ -60,7 +60,7 @@ class Hruska implements Comparable<Hruska> {
 
 public class MinAMaxVMnozine {
 
-    static void praceSHruskami(Set<Hruska> s) {
+    static void praceSHruskami(final Set<Hruska> s) {
         for (int i = 20; i < 30; i++) {
             s.add(new Hruska(i));
         }
