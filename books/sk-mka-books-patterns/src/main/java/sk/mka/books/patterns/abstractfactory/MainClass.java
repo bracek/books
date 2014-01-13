@@ -6,7 +6,7 @@ package sk.mka.books.patterns.abstractfactory;
  */
 public class MainClass {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         GreekSaladInstructionsClient c = new GreekSaladInstructionsClient(new DicedGreekSaladInstructionFactory());
         c.printGreekSaladInstructions();
 

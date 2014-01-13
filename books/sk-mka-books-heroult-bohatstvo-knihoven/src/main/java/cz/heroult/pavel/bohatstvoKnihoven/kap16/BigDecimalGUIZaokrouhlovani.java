@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap16;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -77,28 +77,28 @@ public class BigDecimalGUIZaokrouhlovani extends Frame {
     this.pack();
 
     this.addWindowListener(new WindowAdapter() {
-      public void windowClosing(WindowEvent e) {
+      public void windowClosing(final WindowEvent e) {
         System.exit(1);
       }
     });
   }
 
   class AL1 implements ActionListener {
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(final ActionEvent e) {
       vstupBD = new BigDecimal(vstupTF.getText());
       zobrazVysledek();
     }
   }
 
   class AL2 implements ActionListener {
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(final ActionEvent e) {
       scale = Integer.parseInt(scaleTF.getText());
       zobrazVysledek();
     }
   }
 
   class ADL implements AdjustmentListener {
-    public void adjustmentValueChanged(AdjustmentEvent e) {
+    public void adjustmentValueChanged(final AdjustmentEvent e) {
       int i = vstupSB.getValue();
       int j = actSB - i;
       if (j < 0)
@@ -113,7 +113,7 @@ public class BigDecimalGUIZaokrouhlovani extends Frame {
   }
 
   class IL implements ItemListener {
-    public void itemStateChanged(ItemEvent e) {
+    public void itemStateChanged(final ItemEvent e) {
       Checkbox b = zaokCHB.getSelectedCheckbox();
       String s = b.getLabel();
       for (int i = 0;  i < typI.length;  i++) {
@@ -146,7 +146,7 @@ public class BigDecimalGUIZaokrouhlovani extends Frame {
       actSB = maxSB - 2;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     new BigDecimalGUIZaokrouhlovani().setVisible(true);
   }
 }

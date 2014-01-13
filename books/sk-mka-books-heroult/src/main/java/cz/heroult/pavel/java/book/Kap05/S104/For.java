@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap05.S104;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -17,14 +17,14 @@ package cz.heroult.pavel.java.book.Kap05.S104;
 
 public class For {
   final static int N = 50000000;
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     long z, k;    
     int i, soucin;
 
     z = System.currentTimeMillis();
 
     for (i = 1, soucin = 1;  i <= N;  i++)
-      if (i % 2 == 1)  // dìlení modulo pro zjištìní lichosti
+      if (i % 2 == 1)  // dï¿½lenï¿½ modulo pro zjiï¿½tï¿½nï¿½ lichosti
          soucin *= i;
 
     k = System.currentTimeMillis();

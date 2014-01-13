@@ -4,7 +4,7 @@ public class CeilingFanHighCommand implements Command {
 	CeilingFan ceilingFan;
 	int prevSpeed;
 
-	public CeilingFanHighCommand(CeilingFan ceilingFan) {
+	public CeilingFanHighCommand(final CeilingFan ceilingFan) {
 		this.ceilingFan = ceilingFan;
 	}
 	public void execute() {

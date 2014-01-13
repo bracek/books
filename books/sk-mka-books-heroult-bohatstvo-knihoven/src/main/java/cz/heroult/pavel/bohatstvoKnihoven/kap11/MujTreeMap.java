@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap11;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -26,7 +26,7 @@ class VahaKlic implements Comparable<VahaKlic> {
     return Double.toString(vaha);
   }
 
-  public boolean equals(Object o) {
+  public boolean equals(final Object o) {
     if (o == this)
       return true;
     if (o instanceof VahaKlic == false)
@@ -39,13 +39,14 @@ class VahaKlic implements Comparable<VahaKlic> {
     return (int) vaha;
   }
 
-  public int compareTo(VahaKlic vk) {
+  public int compareTo(final VahaKlic vk) {
     return ((int) (this.vaha - vk.vaha));
   }
 }
 
 class VahovyKomparator implements Comparator<VahaKlic> {
-  public int compare(VahaKlic vk1, VahaKlic vk2) {
+  public int compare(final VahaKlic vk1,
+final  VahaKlic vk2) {
     return (int) (vk1.vaha - vk2.vaha);
   }
 }
@@ -73,7 +74,7 @@ public class MujTreeMap {
     System.out.println("Dva nejtezsi: " + pom + "\n");
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     praceSMapou(new TreeMap<VahaKlic, String>());
     praceSMapou(new TreeMap<VahaKlic, String>(new VahovyKomparator()));
   }

@@ -3,7 +3,7 @@ package headfirst.command.party;
 public class MacroCommand implements Command {
 	Command[] commands;
  
-	public MacroCommand(Command[] commands) {
+	public MacroCommand(final Command[] commands) {
 		this.commands = commands;
 	}
  

@@ -3,7 +3,7 @@ package headfirst.proxy.gumballmonitor;
 public class GumballMonitor {
 	GumballMachine machine;
  
-	public GumballMonitor(GumballMachine machine) {
+	public GumballMonitor(final GumballMachine machine) {
 		this.machine = machine;
 	}
  

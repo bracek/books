@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap19;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -22,7 +22,7 @@ import java.util.*;
 import java.util.zip.*;
 
 public class ZipFileMode {
-  public static void main(String[] args) throws IOException {
+  public static void main(final String[] args) throws IOException {
     File f = new File("pokus.zip");
 //    ZipFile zf = new ZipFile(f, ZipFile.OPEN_READ);
 //    ZipFile zf = new ZipFile(f, ZipFile.OPEN_READ | ZipFile.OPEN_DELETE);

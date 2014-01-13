@@ -5,7 +5,7 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap01;
 import java.util.*;
 
 public class PrevodNaStringRychlost {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int kolik;
     if (args.length > 0) {
       kolik = Integer.parseInt(args[0]);

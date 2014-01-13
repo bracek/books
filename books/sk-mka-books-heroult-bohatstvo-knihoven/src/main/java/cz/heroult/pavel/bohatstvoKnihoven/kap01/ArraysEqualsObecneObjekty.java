@@ -19,7 +19,7 @@ public class ArraysEqualsObecneObjekty {
 
     final static int POCET = 5;
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         MyCele[] pole1 = new MyCele[POCET];
         MyCele[] pole2 = new MyCele[POCET * 2];
         MyCele[] pole3 = new MyCele[POCET];

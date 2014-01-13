@@ -6,7 +6,7 @@ public class BirdExample {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		Bird bird1 = new Bird();
 		Bird bird2 = new Bird();

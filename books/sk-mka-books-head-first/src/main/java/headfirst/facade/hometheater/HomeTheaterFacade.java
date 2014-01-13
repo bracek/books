@@ -10,14 +10,14 @@ public class HomeTheaterFacade {
 	Screen screen;
 	PopcornPopper popper;
  
-	public HomeTheaterFacade(Amplifier amp, 
-				 Tuner tuner, 
-				 DvdPlayer dvd, 
-				 CdPlayer cd, 
-				 Projector projector, 
-				 Screen screen,
-				 TheaterLights lights,
-				 PopcornPopper popper) {
+	public HomeTheaterFacade(final Amplifier amp,
+final  				 Tuner tuner,
+final  				 DvdPlayer dvd,
+final  				 CdPlayer cd,
+final  				 Projector projector,
+final  				 Screen screen,
+final 				 TheaterLights lights,
+final 				 PopcornPopper popper) {
  
 		this.amp = amp;
 		this.tuner = tuner;
@@ -29,7 +29,7 @@ public class HomeTheaterFacade {
 		this.popper = popper;
 	}
  
-	public void watchMovie(String movie) {
+	public void watchMovie(final String movie) {
 		System.out.println("Get ready to watch a movie...");
 		popper.on();
 		popper.pop();
@@ -58,7 +58,7 @@ public class HomeTheaterFacade {
 		dvd.off();
 	}
 
-	public void listenToCd(String cdTitle) {
+	public void listenToCd(final String cdTitle) {
 		System.out.println("Get ready for an audiopile experence...");
 		lights.on();
 		amp.on();
@@ -77,7 +77,7 @@ public class HomeTheaterFacade {
 		cd.off();
 	}
 
-	public void listenToRadio(double frequency) {
+	public void listenToRadio(final double frequency) {
 		System.out.println("Tuning in the airwaves...");
 		tuner.on();
 		tuner.setFrequency(frequency);

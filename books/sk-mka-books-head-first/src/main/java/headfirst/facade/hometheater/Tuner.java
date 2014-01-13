@@ -5,7 +5,8 @@ public class Tuner {
 	Amplifier amplifier;
 	double frequency;
 	
-	public Tuner(String description, Amplifier amplifier) {
+	public Tuner(final String description,
+final  Amplifier amplifier) {
 		this.description = description;
 	}
  
@@ -17,7 +18,7 @@ public class Tuner {
 		System.out.println(description + " off");
 	}
  
-	public void setFrequency(double frequency) {
+	public void setFrequency(final double frequency) {
 		System.out.println(description + " setting frequency to " + frequency);
 		this.frequency = frequency;
 	}

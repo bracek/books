@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WeatherStation {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		WeatherData weatherData = new WeatherData();
 	
 		CurrentConditionsDisplay currentDisplay = 

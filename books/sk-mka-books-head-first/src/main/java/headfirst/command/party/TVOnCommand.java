@@ -3,7 +3,7 @@ package headfirst.command.party;
 public class TVOnCommand implements Command {
 	TV tv;
 
-	public TVOnCommand(TV tv) {
+	public TVOnCommand(final TV tv) {
 		this.tv= tv;
 	}
 

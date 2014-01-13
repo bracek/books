@@ -18,7 +18,7 @@ public class BankABC_SavingsAccountProduct extends BankAccountProduct {
     } // no-arg constructor
 
     @Override
-    public void depositMoney(double depositAmount) {
+    public void depositMoney(final double depositAmount) {
         accountBalance += depositAmount;
         System.out.println("Bank ABC - Savings Account : Deposit money " + depositAmount);
     } // method depositMoney
@@ -29,7 +29,7 @@ public class BankABC_SavingsAccountProduct extends BankAccountProduct {
     } // method displayBalance
 
     @Override
-    public void withdrawMoney(double withdrawAmount) {
+    public void withdrawMoney(final double withdrawAmount) {
         accountBalance -= withdrawAmount;
         System.out.println("Bank ABC - Savings Account : Withdraw money " + withdrawAmount);
     } // method withdrawMoney

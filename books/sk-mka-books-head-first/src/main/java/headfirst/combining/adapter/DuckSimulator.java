@@ -1,7 +1,7 @@
 package headfirst.combining.adapter;
 
 public class DuckSimulator {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		DuckSimulator simulator = new DuckSimulator();
 		simulator.simulate();
 	}

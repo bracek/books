@@ -3,7 +3,7 @@ package headfirst.iterator.dinermergercafe;
 import java.util.*;
 
 public class MenuTestDrive {
-	public static void main(String args[]) {
+	public static void main(final String args[]) {
 		PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
 		DinerMenu dinerMenu = new DinerMenu();
 		CafeMenu cafeMenu = new CafeMenu();

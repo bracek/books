@@ -2,7 +2,7 @@ package headfirst.command.party;
 
 public class RemoteLoader {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		RemoteControl remoteControl = new RemoteControl();
 

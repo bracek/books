@@ -2,7 +2,7 @@ package headfirst.command.undo;
 
 public class RemoteLoader {
  
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();
  
 		Light livingRoomLight = new Light("Living Room");

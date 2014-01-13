@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class StereoOnWithCDCommand implements Command {
 	Stereo stereo;
  
-	public StereoOnWithCDCommand(Stereo stereo) {
+	public StereoOnWithCDCommand(final Stereo stereo) {
 		this.stereo = stereo;
 	}
  

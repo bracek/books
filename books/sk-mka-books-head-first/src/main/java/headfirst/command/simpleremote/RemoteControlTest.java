@@ -1,7 +1,7 @@
 package headfirst.command.simpleremote;
 
 public class RemoteControlTest {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		SimpleRemoteControl remote = new SimpleRemoteControl();
 		Light light = new Light();
 		GarageDoor garageDoor = new GarageDoor();

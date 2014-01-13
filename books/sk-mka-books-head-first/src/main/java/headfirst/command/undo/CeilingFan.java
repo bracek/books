@@ -8,7 +8,7 @@ public class CeilingFan {
 	String location;
 	int speed;
  
-	public CeilingFan(String location) {
+	public CeilingFan(final String location) {
 		this.location = location;
 		speed = OFF;
 	}

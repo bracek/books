@@ -2,7 +2,7 @@ package headfirst.factory.pizzas;
 
 public class PizzaTestDrive {
  
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		SimplePizzaFactory factory = new SimplePizzaFactory();
 		PizzaStore store = new PizzaStore(factory);
 

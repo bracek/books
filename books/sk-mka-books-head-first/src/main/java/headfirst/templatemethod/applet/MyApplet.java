@@ -26,7 +26,7 @@ public class MyApplet extends Applet {
         repaint();
     }
  
-    public void paint(Graphics g) {
+    public void paint(final Graphics g) {
         g.drawString(message, 5, 15);
     }
 }

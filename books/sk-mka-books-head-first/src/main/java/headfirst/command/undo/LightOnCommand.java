@@ -3,7 +3,7 @@ package headfirst.command.undo;
 public class LightOnCommand implements Command {
 	Light light;
 	int level;
-	public LightOnCommand(Light light) {
+	public LightOnCommand(final Light light) {
 		this.light = light;
 	}
  

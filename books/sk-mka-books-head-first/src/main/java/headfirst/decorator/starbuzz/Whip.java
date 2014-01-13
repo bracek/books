@@ -3,7 +3,7 @@ package headfirst.decorator.starbuzz;
 public class Whip extends CondimentDecorator {
 	Beverage beverage;
  
-	public Whip(Beverage beverage) {
+	public Whip(final Beverage beverage) {
 		this.beverage = beverage;
 	}
  

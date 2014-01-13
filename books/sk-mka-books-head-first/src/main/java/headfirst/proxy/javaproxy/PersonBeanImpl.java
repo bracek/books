@@ -25,19 +25,19 @@ public class PersonBeanImpl implements PersonBean {
 	}
   
  
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
  
-	public void setGender(String gender) {
+	public void setGender(final String gender) {
 		this.gender = gender;
 	} 
   
-	public void setInterests(String interests) {
+	public void setInterests(final String interests) {
 		this.interests = interests;
 	} 
   
-	public void setHotOrNotRating(int rating) {
+	public void setHotOrNotRating(final int rating) {
 		this.rating += rating;	
 		ratingCount++;
 	}

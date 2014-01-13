@@ -5,7 +5,7 @@ import java.rmi.*;
 public class GumballMonitor {
 	GumballMachineRemote machine;
  
-	public GumballMonitor(GumballMachineRemote machine) {
+	public GumballMonitor(final GumballMachineRemote machine) {
 		this.machine = machine;
 	}
  

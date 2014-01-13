@@ -1,7 +1,7 @@
 package headfirst.adapter.ducks;
 
 public class DuckTestDrive {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		MallardDuck duck = new MallardDuck();
  
 		WildTurkey turkey = new WildTurkey();

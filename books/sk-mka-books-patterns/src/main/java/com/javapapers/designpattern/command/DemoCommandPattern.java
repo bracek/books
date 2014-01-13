@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DemoCommandPattern {
-	public static void main(String args[]) {
+	public static void main(final String args[]) {
 
 		// OnCommand is instantiated based on active device supplied by Remote
 		ConsumerElectronics ce = UniversalRemote.getActiveDevice();

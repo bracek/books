@@ -7,7 +7,7 @@ package com.javapapers.designpattern.decorator;
  */
 public class NuttyDecorator extends IcecreamDecorator {
 
-  public NuttyDecorator(Icecream specialIcecream) {
+  public NuttyDecorator(final Icecream specialIcecream) {
     super(specialIcecream);
   }
 

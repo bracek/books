@@ -26,7 +26,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 		sequencer.stop();
     }
  
-    public void setBPM(int bpm) {
+    public void setBPM(final int bpm) {
 		this.bpm = bpm;
 		sequencer.setTempoInBPM(getBPM());
 		notifyBPMObservers();
@@ -41,7 +41,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 	}
   
    
-	public void registerObserver(BeatObserver o) {
+	public void registerObserver(final BeatObserver o) {
 		beatObservers.add(o);
 	}
   
@@ -52,7 +52,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 		}
 	}
   
-	public void registerObserver(BPMObserver o) {
+	public void registerObserver(final BPMObserver o) {
 		bpmObservers.add(o);
 	}
   
@@ -64,7 +64,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 	}
 
 
-	public void removeObserver(BeatObserver o) {
+	public void removeObserver(final BeatObserver o) {
 		int i = beatObservers.indexOf(o);
 		if (i >= 0) {
 			beatObservers.remove(i);
@@ -73,7 +73,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 
 
 
-	public void removeObserver(BPMObserver o) {
+	public void removeObserver(final BPMObserver o) {
 		int i = bpmObservers.indexOf(o);
 		if (i >= 0) {
 			bpmObservers.remove(i);
@@ -81,7 +81,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 	}
 
 
-    public void meta(MetaMessage message) {
+    public void meta(final MetaMessage message) {
         if (message.getType() == 47) {
 			beatEvent();
         	sequencer.start();
@@ -117,7 +117,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
 		}
     } 
             
-    public void makeTracks(int[] list) {        
+    public void makeTracks(final int[] list) {        
        
        for (int i = 0; i < list.length; i++) {
           int key = list[i];
@@ -129,7 +129,11 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
        }
     }
         
-    public  MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {
+    public  MidiEvent makeEvent(final int comd,
+final  int chan,
+final  int one,
+final  int two,
+final  int tick) {
         MidiEvent event = null;
         try {
             ShortMessage a = new ShortMessage();

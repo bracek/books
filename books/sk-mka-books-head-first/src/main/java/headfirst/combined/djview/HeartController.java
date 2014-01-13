@@ -4,7 +4,7 @@ public class HeartController implements ControllerInterface {
 	HeartModelInterface model;
 	DJView view;
   
-	public HeartController(HeartModelInterface model) {
+	public HeartController(final HeartModelInterface model) {
 		this.model = model;
 		view = new DJView(this, new HeartAdapter(model));
         view.createView();
@@ -21,7 +21,7 @@ public class HeartController implements ControllerInterface {
     
 	public void decreaseBPM() {}
   
- 	public void setBPM(int bpm) {}
+ 	public void setBPM(final int bpm) {}
 }
 
 

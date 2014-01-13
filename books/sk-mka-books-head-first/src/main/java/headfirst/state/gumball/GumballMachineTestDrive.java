@@ -2,7 +2,7 @@ package headfirst.state.gumball;
 
 public class GumballMachineTestDrive {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		GumballMachine gumballMachine = new GumballMachine(5);
 
 		System.out.println(gumballMachine);

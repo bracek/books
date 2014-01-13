@@ -8,7 +8,7 @@ package com.javapapers.designpattern.decorator;
 public abstract class IcecreamDecorator implements Icecream {
   protected Icecream specialIcecream;
 
-  public IcecreamDecorator(Icecream specialIcecream) {
+  public IcecreamDecorator(final Icecream specialIcecream) {
     this.specialIcecream = specialIcecream;
   }
 

@@ -2,7 +2,7 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap01;
 
 
 public class VelmiMaleCislo {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int i = 2000000000;
     int j = -2000000000;
     int k = i - j;

@@ -6,7 +6,7 @@ public class Amplifier {
 	DvdPlayer dvd;
 	CdPlayer cd;
 	
-	public Amplifier(String description) {
+	public Amplifier(final String description) {
 		this.description = description;
 	}
  
@@ -26,21 +26,21 @@ public class Amplifier {
 		System.out.println(description + " surround sound on (5 speakers, 1 subwoofer)");
 	}
  
-	public void setVolume(int level) {
+	public void setVolume(final int level) {
 		System.out.println(description + " setting volume to " + level);
 	}
 
-	public void setTuner(Tuner tuner) {
+	public void setTuner(final Tuner tuner) {
 		System.out.println(description + " setting tuner to " + dvd);
 		this.tuner = tuner;
 	}
   
-	public void setDvd(DvdPlayer dvd) {
+	public void setDvd(final DvdPlayer dvd) {
 		System.out.println(description + " setting DVD player to " + dvd);
 		this.dvd = dvd;
 	}
  
-	public void setCd(CdPlayer cd) {
+	public void setCd(final CdPlayer cd) {
 		System.out.println(description + " setting CD player to " + cd);
 		this.cd = cd;
 	}

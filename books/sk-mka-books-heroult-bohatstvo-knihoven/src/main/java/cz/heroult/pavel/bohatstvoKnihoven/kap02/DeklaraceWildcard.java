@@ -16,7 +16,7 @@ class ABS {
 
 public class DeklaraceWildcard {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 //        ArrayList<?> ar1 = new ArrayList<?>();  
 //        ArrayList<? extends T> ar2 = new ArrayList<? extends T>();
 //        ArrayList<? extends A> ar3 = new ArrayList<? extends A>();

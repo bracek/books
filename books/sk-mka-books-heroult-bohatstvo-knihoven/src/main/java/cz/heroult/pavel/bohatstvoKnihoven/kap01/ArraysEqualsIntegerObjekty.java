@@ -5,7 +5,7 @@ import java.util.*;
 public class ArraysEqualsIntegerObjekty {
   final static int POCET = 5;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Integer[] pole1 = new Integer[POCET];
     Integer[] pole4 = new Integer[POCET];
 

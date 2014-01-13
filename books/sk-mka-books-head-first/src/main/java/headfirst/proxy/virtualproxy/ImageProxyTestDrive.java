@@ -13,7 +13,7 @@ public class ImageProxyTestDrive {
     JMenu menu;
 	Hashtable cds = new Hashtable();
  
-	public static void main (String[] args) throws Exception {
+	public static void main (final String[] args) throws Exception {
 		ImageProxyTestDrive testDrive = new ImageProxyTestDrive();
 	}
  
@@ -37,7 +37,7 @@ public class ImageProxyTestDrive {
         	JMenuItem menuItem = new JMenuItem(name);
         	menu.add(menuItem); 
         	menuItem.addActionListener(new ActionListener() {
-          		  public void actionPerformed(ActionEvent event) {
+          		  public void actionPerformed(final ActionEvent event) {
            		     imageComponent.setIcon(new ImageProxy(getCDUrl(event.getActionCommand())));
 					frame.repaint();
            	      }

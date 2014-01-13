@@ -5,7 +5,7 @@ import java.util.List;
 public class MuteAllCommand implements Command {
 	List<ConsumerElectronics> ceList;
 
-	public MuteAllCommand(List<ConsumerElectronics> ceList) {
+	public MuteAllCommand(final List<ConsumerElectronics> ceList) {
 		this.ceList = ceList;
 	}
 

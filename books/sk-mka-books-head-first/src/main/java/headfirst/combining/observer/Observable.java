@@ -7,11 +7,11 @@ public class Observable implements QuackObservable {
 	ArrayList observers = new ArrayList();
 	QuackObservable duck;
  
-	public Observable(QuackObservable duck) {
+	public Observable(final QuackObservable duck) {
 		this.duck = duck;
 	}
   
-	public void registerObserver(Observer observer) {
+	public void registerObserver(final Observer observer) {
 		observers.add(observer);
 	}
   

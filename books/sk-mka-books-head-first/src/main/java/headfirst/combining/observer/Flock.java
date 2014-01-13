@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Flock implements Quackable {
 	ArrayList ducks = new ArrayList();
   
-	public void add(Quackable duck) {
+	public void add(final Quackable duck) {
 		ducks.add(duck);
 	}
   
@@ -18,7 +18,7 @@ public class Flock implements Quackable {
 		}
 	}
    
-	public void registerObserver(Observer observer) {
+	public void registerObserver(final Observer observer) {
 		Iterator iterator = ducks.iterator();
 		while (iterator.hasNext()) {
 			Quackable duck = (Quackable)iterator.next();

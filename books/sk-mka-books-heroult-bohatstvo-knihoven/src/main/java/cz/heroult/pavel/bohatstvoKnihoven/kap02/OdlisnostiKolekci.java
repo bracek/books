@@ -4,7 +4,7 @@ import java.util.*;
 
 public class OdlisnostiKolekci {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         ArrayList<String> ar = new ArrayList<String>();
         ar.add("prvni");
         ar.add("druhy");

@@ -13,7 +13,7 @@ public class Bird {
 		counter++;
 	}
 	
-	public static void setCounter(int counter) {
+	public static void setCounter(final int counter) {
 		Bird.counter = counter;
 	}
 

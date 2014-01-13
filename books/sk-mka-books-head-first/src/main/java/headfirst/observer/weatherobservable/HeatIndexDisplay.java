@@ -6,11 +6,12 @@ import java.util.Observer;
 public class HeatIndexDisplay implements Observer, DisplayElement {
 	float heatIndex = 0.0f;
 
-	public HeatIndexDisplay(Observable observable) {
+	public HeatIndexDisplay(final Observable observable) {
 		observable.addObserver(this);
 	}
 
-	public void update(Observable observable, Object arg) {
+	public void update(final Observable observable,
+final  Object arg) {
 		if (observable instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)observable;
 			float t = weatherData.getTemperature();

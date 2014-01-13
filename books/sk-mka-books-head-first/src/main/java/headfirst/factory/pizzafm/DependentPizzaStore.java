@@ -2,7 +2,8 @@ package headfirst.factory.pizzafm;
 
 public class DependentPizzaStore {
  
-	public Pizza createPizza(String style, String type) {
+	public Pizza createPizza(final String style,
+final  String type) {
 		Pizza pizza = null;
 		if (style.equals("NY")) {
 			if (type.equals("cheese")) {

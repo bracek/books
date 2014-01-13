@@ -17,7 +17,7 @@ public class BankXYZ_SavingsAccountProduct extends BankAccountProduct {
         System.out.println("Bank XYZ - Savings Account : Creating account.");
     } // no-arg constructor
 
-    public void depositMoney(double depositAmount) {
+    public void depositMoney(final double depositAmount) {
         accountBalance += depositAmount;
         System.out.println("Bank XYZ - Savings Account : Deposit money " + depositAmount);
     } // method depositMoney
@@ -26,7 +26,7 @@ public class BankXYZ_SavingsAccountProduct extends BankAccountProduct {
         System.out.println("Bank XYZ - Savings Account : Acount Balance " + accountBalance);
     } // method displayBalance
 
-    public void withdrawMoney(double withdrawAmount) {
+    public void withdrawMoney(final double withdrawAmount) {
         accountBalance -= withdrawAmount;
         System.out.println("Bank XYZ - Savings Account : Withdraw money " + withdrawAmount);
     } // method withdrawMoney

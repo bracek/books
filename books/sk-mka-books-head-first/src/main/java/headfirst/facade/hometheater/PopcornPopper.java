@@ -3,7 +3,7 @@ package headfirst.facade.hometheater;
 public class PopcornPopper {
 	String description;
 	
-	public PopcornPopper(String description) {
+	public PopcornPopper(final String description) {
 		this.description = description;
 	}
  

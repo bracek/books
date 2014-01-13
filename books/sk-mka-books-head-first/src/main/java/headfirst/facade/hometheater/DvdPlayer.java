@@ -6,7 +6,8 @@ public class DvdPlayer {
 	Amplifier amplifier;
 	String movie;
 	
-	public DvdPlayer(String description, Amplifier amplifier) {
+	public DvdPlayer(final String description,
+final  Amplifier amplifier) {
 		this.description = description;
 		this.amplifier = amplifier;
 	}
@@ -24,13 +25,13 @@ public class DvdPlayer {
                 System.out.println(description + " eject");
         }
  
-	public void play(String movie) {
+	public void play(final String movie) {
 		this.movie = movie;
 		currentTrack = 0;
 		System.out.println(description + " playing \"" + movie + "\"");
 	}
 
-	public void play(int track) {
+	public void play(final int track) {
 		if (movie == null) {
 			System.out.println(description + " can't play track " + track + " no dvd inserted");
 		} else {

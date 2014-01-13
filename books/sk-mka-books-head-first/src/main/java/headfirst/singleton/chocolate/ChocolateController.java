@@ -1,7 +1,7 @@
 package headfirst.singleton.chocolate;
  
 public class ChocolateController {
-	public static void main(String args[]) {
+	public static void main(final String args[]) {
 		ChocolateBoiler boiler = ChocolateBoiler.getInstance();
 		boiler.fill();
 		boiler.boil();

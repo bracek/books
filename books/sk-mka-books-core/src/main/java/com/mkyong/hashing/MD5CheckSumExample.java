@@ -2,7 +2,7 @@ package com.mkyong.hashing;
 import java.security.MessageDigest;
 
 public class MD5CheckSumExample {
-	public static void main(String[] args) throws Exception {
+	public static void main(final String[] args) throws Exception {
 		String password = "123456";
 
 		MessageDigest md = MessageDigest.getInstance("MD5");

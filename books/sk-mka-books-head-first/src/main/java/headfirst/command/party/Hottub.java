@@ -33,7 +33,7 @@ public class Hottub {
 		}
 	}
 
-	public void setTemperature(int temperature) {
+	public void setTemperature(final int temperature) {
 		if (temperature > this.temperature) {
 			System.out.println("Hottub is heating to a steaming " + temperature + " degrees");
 		}

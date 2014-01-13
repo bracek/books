@@ -7,7 +7,7 @@ public class CeilingFan {
 	public static final int MEDIUM = 1;
 	public static final int LOW = 0;
  
-	public CeilingFan(String location) {
+	public CeilingFan(final String location) {
 		this.location = location;
 	}
   

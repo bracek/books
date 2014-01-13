@@ -3,7 +3,7 @@ package headfirst.combined.djview;
 public class HeartAdapter implements BeatModelInterface {
 	HeartModelInterface heart;
  
-	public HeartAdapter(HeartModelInterface heart) {
+	public HeartAdapter(final HeartModelInterface heart) {
 		this.heart = heart;
 	}
 
@@ -17,21 +17,21 @@ public class HeartAdapter implements BeatModelInterface {
 		return heart.getHeartRate();
 	}
   
-    public void setBPM(int bpm) {}
+    public void setBPM(final int bpm) {}
    
-	public void registerObserver(BeatObserver o) {
+	public void registerObserver(final BeatObserver o) {
 		heart.registerObserver(o);
 	}
     
-	public void removeObserver(BeatObserver o) {
+	public void removeObserver(final BeatObserver o) {
 		heart.removeObserver(o);
 	}
      
-	public void registerObserver(BPMObserver o) {
+	public void registerObserver(final BPMObserver o) {
 		heart.registerObserver(o);
 	}
   
-	public void removeObserver(BPMObserver o) {
+	public void removeObserver(final BPMObserver o) {
 		heart.removeObserver(o);
 	}
 }

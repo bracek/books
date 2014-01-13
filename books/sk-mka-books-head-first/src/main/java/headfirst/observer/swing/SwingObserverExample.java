@@ -8,7 +8,7 @@ import javax.swing.event.*;
 public class SwingObserverExample {
 	JFrame frame;
 	
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		SwingObserverExample example = new SwingObserverExample();
 		example.go();
 	}
@@ -29,13 +29,13 @@ public class SwingObserverExample {
 	}
 	
 	class AngelListener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
+		public void actionPerformed(final ActionEvent event) {
 			System.out.println("Don't do it, you might regret it!");
 		}
 	}
 
 	class DevilListener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
+		public void actionPerformed(final ActionEvent event) {
 			System.out.println("Come on, do it!");
 		}
 	}

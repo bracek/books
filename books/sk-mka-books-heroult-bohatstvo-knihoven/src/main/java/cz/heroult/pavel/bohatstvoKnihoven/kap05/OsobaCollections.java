@@ -3,15 +3,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap05;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      //
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      //
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      //
 //                                                             //
@@ -30,7 +30,7 @@ class Osoba implements Comparable<Osoba> {
         this.popis = popis;
     }
 
-    public int compareTo(Osoba os) {
+    public int compareTo(final Osoba os) {
         return this.vyska - os.vyska;
     }
 
@@ -41,21 +41,23 @@ class Osoba implements Comparable<Osoba> {
 
 class KomparatorOsobyPodleVysky implements Comparator<Osoba> {
 
-    public int compare(Osoba os1, Osoba os2) {
+    public int compare(final Osoba os1,
+final  Osoba os2) {
         return os1.vyska - os2.vyska;
     }
 }
 
 class KomparatorOsobyPodleVahy implements Comparator<Osoba> {
 
-    public int compare(Osoba os1, Osoba os2) {
+    public int compare(final Osoba os1,
+final  Osoba os2) {
         return (int) (os1.vaha - os2.vaha);
     }
 }
 
 public class OsobaCollections {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         List<Osoba> sez = new ArrayList<Osoba>();
         sez.add(new Osoba(186, 82.5, "muz"));
         sez.add(new Osoba(172, 63.0, "zena"));

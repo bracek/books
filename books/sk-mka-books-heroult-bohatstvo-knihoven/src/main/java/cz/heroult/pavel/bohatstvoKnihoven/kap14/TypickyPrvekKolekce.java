@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap14;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -21,7 +21,8 @@ class Jmeno implements Comparable<Jmeno> {
 
     private String krestni,  prijmeni;
 
-    public Jmeno(String krestni, String prijmeni) {
+    public Jmeno(final String krestni,
+final  String prijmeni) {
         if (krestni == null || prijmeni == null) {
             throw new NullPointerException();
         }
@@ -38,7 +39,7 @@ class Jmeno implements Comparable<Jmeno> {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(final Object o) {
         if (o == this) {
             return true;
         }
@@ -64,7 +65,7 @@ class Jmeno implements Comparable<Jmeno> {
         return krestni + " " + prijmeni;
     }
 
-    public int compareTo(Jmeno j) {
+    public int compareTo(final Jmeno j) {
         int pom = prijmeni.compareTo(j.prijmeni);
         return (pom == 0 ? krestni.compareTo(j.krestni) : pom);
     }
@@ -72,7 +73,7 @@ class Jmeno implements Comparable<Jmeno> {
 
 public class TypickyPrvekKolekce {
 
-    public static void main(String[] argv) {
+    public static void main(final String[] argv) {
         ArrayList<Jmeno> ar = new ArrayList<Jmeno>();
         ar.add(new Jmeno("Premysl", "Prvni"));
         ar.add(new Jmeno("Rudolf", "Druhy"));

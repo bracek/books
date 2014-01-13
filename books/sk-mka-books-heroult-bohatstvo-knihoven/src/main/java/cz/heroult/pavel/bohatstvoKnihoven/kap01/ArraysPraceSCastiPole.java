@@ -7,7 +7,7 @@ public class ArraysPraceSCastiPole {
   final static int POCET = 12;
   static int[] pole;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int dolni = POCET / 3;
     int horni = 2 * dolni;
     pole = new int[POCET];

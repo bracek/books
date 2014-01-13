@@ -8,12 +8,13 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
 	private float humidity;
 	
-	public CurrentConditionsDisplay(Observable observable) {
+	public CurrentConditionsDisplay(final Observable observable) {
 		this.observable = observable;
 		observable.addObserver(this);
 	}
 	
-	public void update(Observable obs, Object arg) {
+	public void update(final Observable obs,
+final  Object arg) {
 		if (obs instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)obs;
 			this.temperature = weatherData.getTemperature();

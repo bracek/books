@@ -6,7 +6,7 @@ package com.javapapers.designpattern.decorator;
  * Time: 9:30 AM
  */
 public class HoneyDecorator extends IcecreamDecorator {
-  public HoneyDecorator(Icecream specialIcecream) {
+  public HoneyDecorator(final Icecream specialIcecream) {
     super(specialIcecream);
   }
 

@@ -24,7 +24,7 @@ public class ArraysPlneniSerazeniAVyhledavani {
     }
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     pole = new int[POCET];
     Arrays.fill(pole, 3);
     // prevedeni pole na retezec pomoci Arrays.toString()

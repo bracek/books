@@ -5,7 +5,7 @@ package com.javapapers.designpattern.bridge;
  */
 public class BridgePattern {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		Vehicle vehicle1 = new Car(new Produce(), new Assemble());
 		vehicle1.manufacture();

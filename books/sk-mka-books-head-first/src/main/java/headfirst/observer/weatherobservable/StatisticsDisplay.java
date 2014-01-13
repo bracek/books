@@ -9,11 +9,12 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	private float tempSum= 0.0f;
 	private int numReadings;
 
-	public StatisticsDisplay(Observable observable) {
+	public StatisticsDisplay(final Observable observable) {
 		observable.addObserver(this);
 	}
 
-	public void update(Observable observable, Object arg) {
+	public void update(final Observable observable,
+final  Object arg) {
 		if (observable instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)observable;
 			float temp = weatherData.getTemperature();

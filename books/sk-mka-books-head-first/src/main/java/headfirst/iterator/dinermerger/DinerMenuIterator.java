@@ -4,7 +4,7 @@ public class DinerMenuIterator implements Iterator {
 	MenuItem[] items;
 	int position = 0;
  
-	public DinerMenuIterator(MenuItem[] items) {
+	public DinerMenuIterator(final MenuItem[] items) {
 		this.items = items;
 	}
  

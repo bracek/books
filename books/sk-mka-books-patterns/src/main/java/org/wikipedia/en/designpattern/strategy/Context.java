@@ -10,11 +10,12 @@ public class Context {
     private Strategy strategy;
 
     // Constructor
-    public Context(Strategy strategy) {
+    public Context(final Strategy strategy) {
         this.strategy = strategy;
     }
 
-    public int executeStrategy(int a, int b) {
+    public int executeStrategy(final int a,
+final  int b) {
         return strategy.execute(a, b);
     }
 

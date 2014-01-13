@@ -9,10 +9,10 @@ package sk.mka.books.patterns.factorymethod;
  */
 public abstract class BankAccountProduct {
 
-    public abstract void depositMoney(double depositAmount);
+    public abstract void depositMoney(final double depositAmount);
 
     public abstract void displayBalance();
 
-    public abstract void withdrawMoney(double withdrawAmount);
+    public abstract void withdrawMoney(final double withdrawAmount);
 } // class BankAccountProduct
 

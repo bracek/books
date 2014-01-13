@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame {
 
-	public MyFrame(String title) {
+	public MyFrame(final String title) {
 		super(title);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -13,13 +13,13 @@ public class MyFrame extends JFrame {
 		this.setVisible(true);
 	}
 
-	public void paint(Graphics graphics) {
+	public void paint(final Graphics graphics) {
 		super.paint(graphics);
 		String msg = "I rule!!";
 		graphics.drawString(msg, 100, 100);
 	}
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		MyFrame myFrame = new MyFrame("Head First Design Patterns");
 	}
 }

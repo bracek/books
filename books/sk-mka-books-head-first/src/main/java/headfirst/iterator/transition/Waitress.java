@@ -6,7 +6,7 @@ public class Waitress {
 	ArrayList menus;
      
   
-	public Waitress(ArrayList menus) {
+	public Waitress(final ArrayList menus) {
 		this.menus = menus;
 	}
    

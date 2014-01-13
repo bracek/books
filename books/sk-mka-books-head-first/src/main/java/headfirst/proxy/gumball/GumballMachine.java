@@ -16,7 +16,8 @@ public class GumballMachine
 	int count = 0;
  	String location;
 
-	public GumballMachine(String location, int numberGumballs) throws RemoteException {
+	public GumballMachine(final String location,
+final  int numberGumballs) throws RemoteException {
 		soldOutState = new SoldOutState(this);
 		noQuarterState = new NoQuarterState(this);
 		hasQuarterState = new HasQuarterState(this);
@@ -55,7 +56,7 @@ public class GumballMachine
 		}
 	}
 
-	public void refill(int count) {
+	public void refill(final int count) {
 		this.count = count;
 		state = noQuarterState;
 	}

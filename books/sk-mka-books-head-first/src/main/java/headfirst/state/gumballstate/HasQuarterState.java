@@ -5,7 +5,7 @@ import java.util.Random;
 public class HasQuarterState implements State {
 	GumballMachine gumballMachine;
  
-	public HasQuarterState(GumballMachine gumballMachine) {
+	public HasQuarterState(final GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
   

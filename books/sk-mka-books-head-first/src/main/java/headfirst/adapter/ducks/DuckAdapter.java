@@ -5,7 +5,7 @@ public class DuckAdapter implements Turkey {
 	Duck duck;
 	Random rand;
  
-	public DuckAdapter(Duck duck) {
+	public DuckAdapter(final Duck duck) {
 		this.duck = duck;
 		rand = new Random();
 	}

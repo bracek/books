@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap06.S118;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -20,11 +20,11 @@ public class Metody5 {
     return a + b;
   }
 
-  static int secti(int a, int b) {  // pøetížená metoda secti()
+  static int secti(int a, int b) {  // pï¿½etï¿½enï¿½ metoda secti()
     return a + b;
   }
 
-  public static void main(String[] args) { 
+  public static void main(final String[] args) { 
     System.out.println(secti(1, 3.14));
     System.out.println(secti(2, 5));
   }

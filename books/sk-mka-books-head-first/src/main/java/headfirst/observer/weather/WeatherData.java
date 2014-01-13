@@ -12,11 +12,11 @@ public class WeatherData implements Subject {
 		observers = new ArrayList();
 	}
 	
-	public void registerObserver(Observer o) {
+	public void registerObserver(final Observer o) {
 		observers.add(o);
 	}
 	
-	public void removeObserver(Observer o) {
+	public void removeObserver(final Observer o) {
 		int i = observers.indexOf(o);
 		if (i >= 0) {
 			observers.remove(i);
@@ -34,7 +34,9 @@ public class WeatherData implements Subject {
 		notifyObservers();
 	}
 	
-	public void setMeasurements(float temperature, float humidity, float pressure) {
+	public void setMeasurements(final float temperature,
+final  float humidity,
+final  float pressure) {
 		this.temperature = temperature;
 		this.humidity = humidity;
 		this.pressure = pressure;

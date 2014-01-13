@@ -2,21 +2,21 @@ package cz.heroult.pavel.java.book.Kap10.S204;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
 /////////////////////////////////////////////////////////////////
 class PraceSPolem {
 
-    public static void tiskniPole(int[][] p) {
+    public static void tiskniPole(final int[][] p) {
         for (int i = 0; i < p.length; i++) {
             for (int j = 0; j < p[i].length; j++) {
                 System.out.print(p[i][j] + ", ");
@@ -25,7 +25,8 @@ class PraceSPolem {
         }
     }
 
-    public static void nastavATiskniRadku(int[] r, int h) {
+    public static void nastavATiskniRadku(final int[] r,
+final  int h) {
         for (int i = 0; i < r.length; i++) {
             r[i] = i + h;
             System.out.print(r[i] + ", ");
@@ -36,7 +37,7 @@ class PraceSPolem {
 
 public class PolePoli {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int[][] pole1 = {{4, 3, 2, 1}, {1, 2, 3, 4}};
         int[][] pole2 = {{1}, {2, 3}, {4, 5, 6}};
         PraceSPolem.tiskniPole(pole1);

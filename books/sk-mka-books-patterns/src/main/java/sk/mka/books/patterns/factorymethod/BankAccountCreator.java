@@ -9,6 +9,6 @@ package sk.mka.books.patterns.factorymethod;
  */
 public abstract class BankAccountCreator {
 
-    protected abstract BankAccountProduct createBankAccount(String accountType);
+    protected abstract BankAccountProduct createBankAccount(final String accountType);
 } // class BankAccountCreator
 

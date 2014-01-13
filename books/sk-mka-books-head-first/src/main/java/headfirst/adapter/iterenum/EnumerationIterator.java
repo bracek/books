@@ -5,7 +5,7 @@ import java.util.*;
 public class EnumerationIterator implements Iterator {
 	Enumeration enumeration;
  
-	public EnumerationIterator(Enumeration enumeration) {
+	public EnumerationIterator(final Enumeration enumeration) {
 		this.enumeration = enumeration;
 	}
  

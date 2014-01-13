@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap08.S152;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -24,11 +24,11 @@ public class Zakaznik {
     this.utratil = 0;
   }
 
-  public void platil(int cena) {
+  public void platil(final int cena) {
     this.utratil += cena;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println("Pocet zakazniku: " + pocetZakazniku);
     Zakaznik zak = new Zakaznik();
     System.out.println("Pocet zakazniku: " + pocetZakazniku);
@@ -39,6 +39,6 @@ public class Zakaznik {
     zak2.platil(20);
     System.out.println("Utratili: " + zak.utratil + " + " + zak2.utratil);
 
-    pocetZakazniku++; // nesmysl, ale pøekladaèi nevadí
+    pocetZakazniku++; // nesmysl, ale pï¿½ekladaï¿½i nevadï¿½
   }
 }

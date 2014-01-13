@@ -5,11 +5,13 @@ import java.lang.reflect.*;
 public class OwnerInvocationHandler implements InvocationHandler { 
 	PersonBean person;
  
-	public OwnerInvocationHandler(PersonBean person) {
+	public OwnerInvocationHandler(final PersonBean person) {
 		this.person = person;
 	}
  
-	public Object invoke(Object proxy, Method method, Object[] args) 
+	public Object invoke(final Object proxy,
+final  Method method,
+final  Object[] args) 
 			throws IllegalAccessException {
   
 		try {

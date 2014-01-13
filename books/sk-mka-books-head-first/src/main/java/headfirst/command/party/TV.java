@@ -4,7 +4,7 @@ public class TV {
 	String location;
 	int channel;
 
-	public TV(String location) {
+	public TV(final String location) {
 		this.location = location;
 	}
 

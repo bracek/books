@@ -8,7 +8,7 @@ public class GreekSaladInstructionsClient {
 	private CucumberInstructions cucumberInstructions;
 
 	
-	public GreekSaladInstructionsClient(SaladInstructionsKit factory) {
+	public GreekSaladInstructionsClient(final SaladInstructionsKit factory) {
 		tomatoInstructions = factory.createTomatoInstructions();
 		cucumberInstructions = factory.createCucumberInstructions();	
 	}

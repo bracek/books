@@ -11,7 +11,7 @@ class ImageProxy implements Icon {
 	Thread retrievalThread;
 	boolean retrieving = false;
      
-	public ImageProxy(URL url) { imageURL = url; }
+	public ImageProxy(final URL url) { imageURL = url; }
      
 	public int getIconWidth() {
 		if (imageIcon != null) {
@@ -29,7 +29,10 @@ class ImageProxy implements Icon {
 		}
 	}
      
-	public void paintIcon(final Component c, Graphics  g, int x,  int y) {
+	public void paintIcon(final Component c,
+final  Graphics  g,
+final  int x,
+final   int y) {
 		if (imageIcon != null) {
 			imageIcon.paintIcon(c, g, x, y);
 		} else {

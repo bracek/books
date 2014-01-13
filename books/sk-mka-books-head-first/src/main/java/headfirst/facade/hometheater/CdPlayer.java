@@ -6,7 +6,8 @@ public class CdPlayer {
 	Amplifier amplifier;
 	String title;
 	
-	public CdPlayer(String description, Amplifier amplifier) {
+	public CdPlayer(final String description,
+final  Amplifier amplifier) {
 		this.description = description;
 		this.amplifier = amplifier;
 	}
@@ -24,13 +25,13 @@ public class CdPlayer {
 		System.out.println(description + " eject");
 	}
  
-	public void play(String title) {
+	public void play(final String title) {
 		this.title = title;
 		currentTrack = 0;
 		System.out.println(description + " playing \"" + title + "\"");
 	}
 
-	public void play(int track) {
+	public void play(final int track) {
 		if (title == null) {
 			System.out.println(description + " can't play track " + currentTrack + 
 					", no cd inserted");

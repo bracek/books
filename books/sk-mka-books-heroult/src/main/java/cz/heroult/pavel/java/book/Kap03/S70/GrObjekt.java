@@ -2,32 +2,32 @@ package cz.heroult.pavel.java.book.Kap03.S70;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
 /////////////////////////////////////////////////////////////////
 
 public class GrObjekt {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     final byte VIDITELNY = 1;
     final byte PREMISTITELNY = 2;
     final byte MENITELNY = 4;
     final byte SMAZATELNY = 8;
 
-    byte stav = 0;       // s tímto objektem nelze provádet nic
-    stav |= VIDITELNY;   // od této chvíle je viditelný
+    byte stav = 0;       // s tï¿½mto objektem nelze provï¿½det nic
+    stav |= VIDITELNY;   // od tï¿½to chvï¿½le je viditelnï¿½
     if ((stav & VIDITELNY) == VIDITELNY)
       System.out.println("je viditelny");
 
-    stav &= ~VIDITELNY;      // od této chvíle je neviditelný
+    stav &= ~VIDITELNY;      // od tï¿½to chvï¿½le je neviditelnï¿½
     if ((stav & VIDITELNY) == VIDITELNY)
       System.out.println("viditelny");
   }

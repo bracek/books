@@ -3,7 +3,7 @@ package headfirst.command.party;
 public class LightOnCommand implements Command {
 	Light light;
 
-	public LightOnCommand(Light light) {
+	public LightOnCommand(final Light light) {
 		this.light = light;
 	}
 

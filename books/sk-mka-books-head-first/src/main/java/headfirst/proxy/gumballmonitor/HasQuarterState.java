@@ -7,7 +7,7 @@ public class HasQuarterState implements State {
 	Random randomWinner = new Random(System.currentTimeMillis());
 	GumballMachine gumballMachine;
  
-	public HasQuarterState(GumballMachine gumballMachine) {
+	public HasQuarterState(final GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
   

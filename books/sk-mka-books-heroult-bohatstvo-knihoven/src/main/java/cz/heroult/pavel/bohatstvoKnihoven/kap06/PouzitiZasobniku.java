@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap06;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      //
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      //
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      //
 //                                                             //
@@ -21,7 +21,7 @@ class Zasobnik<E> {
 
     private LinkedList<E> zasob = new LinkedList<E>();
 
-    public void add(E elem) {
+    public void add(final E elem) {
         zasob.addFirst(elem);
     }
 
@@ -40,7 +40,7 @@ class Zasobnik<E> {
 
 public class PouzitiZasobniku {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Zasobnik<String> zs = new Zasobnik<String>();
         zs.add("prvni");
         zs.add("druhy");

@@ -3,7 +3,7 @@ package headfirst.composite.menuiterator;
 import java.util.*;
 
 public class MenuTestDrive {
-	public static void main(String args[]) {
+	public static void main(final String args[]) {
 
 		MenuComponent pancakeHouseMenu = 
 			new Menu("PANCAKE HOUSE MENU", "Breakfast");

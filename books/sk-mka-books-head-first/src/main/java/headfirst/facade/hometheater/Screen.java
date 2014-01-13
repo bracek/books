@@ -3,7 +3,7 @@ package headfirst.facade.hometheater;
 public class Screen {
 	String description;
 	
-	public Screen(String description) {
+	public Screen(final String description) {
 		this.description = description;
 	}
  

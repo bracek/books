@@ -2,14 +2,14 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap01;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                 Java -- bohatství knihoven                  //
+//                 Java -- bohatstvï¿½ knihoven                  //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2003                      // 
 //                                                             //
@@ -24,7 +24,8 @@ import java.io.*;
 class KomparatorCeskychAkcentovanychStringu implements Comparator {
   private Collator col = Collator.getInstance(new Locale("cs", "CZ"));
 
-  public int compare(Object o1, Object o2) {
+  public int compare(final Object o1,
+final  Object o2) {
     String s1 = (String) o1;
     String s2 = (String) o2;
     return col.compare(s1, s2);
@@ -32,16 +33,16 @@ class KomparatorCeskychAkcentovanychStringu implements Comparator {
 }
 
 public class ArraysAbsolutniRazeniAkcentovanychStringu {
-  public static void main(String[] args) throws IOException {
+  public static void main(final String[] args) throws IOException {
     OutputStreamWriter o = new OutputStreamWriter(System.out, "Cp852");
     PrintWriter p = new PrintWriter(o);
 
     String[] akcentovaneRetezce = {
-      "nový vìk", "Nový Svìt", "Nový svìt", "nový Svìt", 
-      "nový svìt", "Nový Svet", "Nový svet",
-      "abc traktoristy", "ABC nástrojaøe",
-      "abc nástrojaøe", "ABC kováøe", "ABC klempíøe",
-      "abc frézaøe", "ABC", "Abc", "abc", "A", "a" };
+      "novï¿½ vï¿½k", "Novï¿½ Svï¿½t", "Novï¿½ svï¿½t", "novï¿½ Svï¿½t", 
+      "novï¿½ svï¿½t", "Novï¿½ Svet", "Novï¿½ svet",
+      "abc traktoristy", "ABC nï¿½strojaï¿½e",
+      "abc nï¿½strojaï¿½e", "ABC kovï¿½ï¿½e", "ABC klempï¿½ï¿½e",
+      "abc frï¿½zaï¿½e", "ABC", "Abc", "abc", "A", "a" };
 
     Arrays.sort(akcentovaneRetezce, 
                 new KomparatorCeskychAkcentovanychStringu());

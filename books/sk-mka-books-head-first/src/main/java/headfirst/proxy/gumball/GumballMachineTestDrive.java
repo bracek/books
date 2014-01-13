@@ -3,7 +3,7 @@ import java.rmi.*;
 
 public class GumballMachineTestDrive {
  
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		GumballMachineRemote gumballMachine = null;
 		int count;
 

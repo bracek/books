@@ -58,7 +58,7 @@ public class Hluboka implements Cloneable {
     return k;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Pomocna p = new Pomocna(3.14);
     Hluboka kopie, orig = new Hluboka(5, p);
     kopie = (Hluboka) orig.clone();

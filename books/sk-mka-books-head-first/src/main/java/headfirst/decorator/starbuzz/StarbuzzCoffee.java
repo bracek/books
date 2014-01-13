@@ -2,7 +2,7 @@ package headfirst.decorator.starbuzz;
 
 public class StarbuzzCoffee {
  
-	public static void main(String args[]) {
+	public static void main(final String args[]) {
 		Beverage beverage = new Espresso();
 		System.out.println(beverage.getDescription() 
 				+ " $" + beverage.cost());

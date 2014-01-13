@@ -3,7 +3,7 @@ package headfirst.decorator.io;
 import java.io.*;
 
 public class InputTest {
-	public static void main(String[] args) throws IOException {
+	public static void main(final String[] args) throws IOException {
 		int c;
 
 		try {

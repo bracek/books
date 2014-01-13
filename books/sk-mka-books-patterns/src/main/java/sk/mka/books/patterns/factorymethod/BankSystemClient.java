@@ -2,7 +2,7 @@ package sk.mka.books.patterns.factorymethod;
 
 public class BankSystemClient {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         BankAccountCreator bankSystemCreator = new BankXYZ_AccountConcreteCreator();
         BankAccountProduct account = bankSystemCreator.createBankAccount("CHEQUE");
 

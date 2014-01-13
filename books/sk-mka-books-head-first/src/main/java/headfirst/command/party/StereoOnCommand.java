@@ -3,7 +3,7 @@ package headfirst.command.party;
 public class StereoOnCommand implements Command {
 	Stereo stereo;
 
-	public StereoOnCommand(Stereo stereo) {
+	public StereoOnCommand(final Stereo stereo) {
 		this.stereo = stereo;
 	}
 

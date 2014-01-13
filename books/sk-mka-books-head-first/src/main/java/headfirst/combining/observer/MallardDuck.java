@@ -12,7 +12,7 @@ public class MallardDuck implements Quackable {
 		notifyObservers();
 	}
  
-	public void registerObserver(Observer observer) {
+	public void registerObserver(final Observer observer) {
 		observable.registerObserver(observer);
 	}
  

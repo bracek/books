@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Flock implements Quackable {
 	ArrayList quackers = new ArrayList();
  
-	public void add(Quackable quacker) {
+	public void add(final Quackable quacker) {
 		quackers.add(quacker);
 	}
  

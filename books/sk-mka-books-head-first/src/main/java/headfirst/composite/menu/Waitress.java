@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class Waitress {
 	MenuComponent allMenus;
  
-	public Waitress(MenuComponent allMenus) {
+	public Waitress(final MenuComponent allMenus) {
 		this.allMenus = allMenus;
 	}
  

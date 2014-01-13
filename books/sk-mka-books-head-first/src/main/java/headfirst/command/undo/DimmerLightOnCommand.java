@@ -4,7 +4,7 @@ public class DimmerLightOnCommand implements Command {
 	Light light;
 	int prevLevel;
 
-	public DimmerLightOnCommand(Light light) {
+	public DimmerLightOnCommand(final Light light) {
 		this.light = light;
 	}
 

@@ -12,7 +12,7 @@ package sk.mka.books.patterns.factorymethod;
 public class BankABC_AccountConcreteCreator extends BankAccountCreator {
 
     @Override
-    protected BankAccountProduct createBankAccount(String accountType) {
+    protected BankAccountProduct createBankAccount(final String accountType) {
         if ("CHEQUE".equals(accountType)) {
             return new BankABC_ChequeAccountProduct();
 

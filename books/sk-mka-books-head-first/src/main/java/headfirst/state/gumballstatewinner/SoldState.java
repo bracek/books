@@ -3,7 +3,7 @@ package headfirst.state.gumballstatewinner;
 public class SoldState implements State {
     GumballMachine gumballMachine;
  
-    public SoldState(GumballMachine gumballMachine) {
+    public SoldState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
        

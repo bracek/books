@@ -7,7 +7,8 @@ abstract class Vehicle {
 	protected Workshop workShop1;
 	protected Workshop workShop2;
 
-	protected Vehicle(Workshop workShop1, Workshop workShop2) {
+	protected Vehicle(final Workshop workShop1,
+final  Workshop workShop2) {
 		this.workShop1 = workShop1;
 		this.workShop2 = workShop2;
 	}

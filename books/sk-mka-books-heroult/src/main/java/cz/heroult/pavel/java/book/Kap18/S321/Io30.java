@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap18.S321;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -18,7 +18,9 @@ package cz.heroult.pavel.java.book.Kap18.S321;
 import java.io.*;
 
 public class Io30 {
-  public static Reader vyber(Reader vstup,int index,char znak)
+  public static Reader vyber(final Reader vstup,
+final int index,
+final char znak)
                                         throws IOException {
     BufferedReader bufVstup = new BufferedReader(vstup);
 
@@ -39,12 +41,12 @@ public class Io30 {
     return rouraVstup;
   }
 
-  public static void main(String[] argv) throws IOException {
+  public static void main(final String[] argv) throws IOException {
     FileReader fr = new FileReader("data120.txt");
     Reader jednaDevet = vyber(vyber(fr, 0, '1'), 2, '9');
     fr.close();
 
-    String radka;                          // závìreèný tisk
+    String radka;                          // zï¿½vï¿½reï¿½nï¿½ tisk
     BufferedReader br = new BufferedReader(jednaDevet);
 
     while((radka = br.readLine()) != null) {

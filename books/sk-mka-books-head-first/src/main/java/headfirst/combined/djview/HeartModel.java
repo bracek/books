@@ -41,11 +41,11 @@ public class HeartModel implements HeartModelInterface, Runnable {
 		return 60000/time;
 	}
 
-	public void registerObserver(BeatObserver o) {
+	public void registerObserver(final BeatObserver o) {
 		beatObservers.add(o);
 	}
 
-	public void removeObserver(BeatObserver o) {
+	public void removeObserver(final BeatObserver o) {
 		int i = beatObservers.indexOf(o);
 		if (i >= 0) {
 			beatObservers.remove(i);
@@ -59,11 +59,11 @@ public class HeartModel implements HeartModelInterface, Runnable {
 		}
 	}
 
-	public void registerObserver(BPMObserver o) {
+	public void registerObserver(final BPMObserver o) {
 		bpmObservers.add(o);
 	}
 
-	public void removeObserver(BPMObserver o) {
+	public void removeObserver(final BPMObserver o) {
 		int i = bpmObservers.indexOf(o);
 		if (i >= 0) {
 			bpmObservers.remove(i);

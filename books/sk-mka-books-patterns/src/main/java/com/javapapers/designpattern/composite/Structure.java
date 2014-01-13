@@ -15,12 +15,12 @@ public class Structure implements Group {
   }
  
   // Adds the group to the structure.
-  public void add(Group group) {
+  public void add(final Group group) {
     groups.add(group);
   }
  
   // Removes the group from the structure.
-  public void remove(Group group) {
+  public void remove(final Group group) {
     groups.remove(group);
   }
 }

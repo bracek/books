@@ -2,7 +2,7 @@ package headfirst.factory.pizzaaf;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
-	protected Pizza createPizza(String item) {
+	protected Pizza createPizza(final String item) {
 		Pizza pizza = null;
 		PizzaIngredientFactory ingredientFactory =
 		new ChicagoPizzaIngredientFactory();

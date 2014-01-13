@@ -3,7 +3,7 @@ package com.javapapers.designpattern.factory;
 //Factory method pattern implementation that instantiates objects based on logic
 public class PetFactory {
 
-	public Pet getPet(String petType) {
+	public Pet getPet(final String petType) {
 		Pet pet = null;
 
 		// based on logic factory instantiates an object

@@ -3,7 +3,7 @@ package headfirst.combining.adapter;
 public class GooseAdapter implements Quackable {
 	Goose goose;
  
-	public GooseAdapter(Goose goose) {
+	public GooseAdapter(final Goose goose) {
 		this.goose = goose;
 	}
  

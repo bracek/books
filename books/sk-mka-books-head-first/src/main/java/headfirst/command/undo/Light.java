@@ -4,7 +4,7 @@ public class Light {
 	String location;
 	int level;
 
-	public Light(String location) {
+	public Light(final String location) {
 		this.location = location;
 	}
 
@@ -18,7 +18,7 @@ public class Light {
 		System.out.println("Light is off");
 	}
 
-	public void dim(int level) {
+	public void dim(final int level) {
 		this.level = level;
 		if (level == 0) {
 			off();

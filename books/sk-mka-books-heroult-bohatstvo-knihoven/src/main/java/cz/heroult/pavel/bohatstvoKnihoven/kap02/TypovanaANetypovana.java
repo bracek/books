@@ -4,7 +4,7 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap02;
 import java.util.*;
 
 public class TypovanaANetypovana {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     ArrayList arNetypovany = new ArrayList();
     arNetypovany.add(new Integer(1));
     arNetypovany.add(new Integer(2));

@@ -2,21 +2,21 @@ package cz.heroult.pavel.java.book.Kap05.S105;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
 /////////////////////////////////////////////////////////////////
 
 public class ViceCyklu {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int[] a = new int[10];
     int[] b = new int[10];
     int[] x = new int[10];
@@ -24,8 +24,8 @@ public class ViceCyklu {
     for (int i = 0;  i < 10;  i++) {
       a[i] = i + 1;
       b[i] = i + 1;
-      x[i] = i + 1;    // správný výpoèet
-//      x[i] = i;        // nulový dìlitel
+      x[i] = i + 1;    // sprï¿½vnï¿½ vï¿½poï¿½et
+//      x[i] = i;        // nulovï¿½ dï¿½litel
     }
 
 chyba:
@@ -40,7 +40,7 @@ chyba:
         }
       }
       System.out.println("Dobre");
-      // a napø. tisk výsledkù a return
+      // a napï¿½. tisk vï¿½sledkï¿½ a return
       for (int i = 0;  i < 10;  i++) {
         System.out.print(a[i] + "  ");
       }

@@ -4,7 +4,7 @@ public class ArrayIterator implements Iterator {
 	MenuItem[] items;
 	int position = 0;
  
-	public ArrayIterator(MenuItem[] items) {
+	public ArrayIterator(final MenuItem[] items) {
 		this.items = items;
 	}
  

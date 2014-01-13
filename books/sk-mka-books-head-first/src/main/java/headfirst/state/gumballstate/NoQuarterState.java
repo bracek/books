@@ -3,7 +3,7 @@ package headfirst.state.gumballstate;
 public class NoQuarterState implements State {
     GumballMachine gumballMachine;
  
-    public NoQuarterState(GumballMachine gumballMachine) {
+    public NoQuarterState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
  

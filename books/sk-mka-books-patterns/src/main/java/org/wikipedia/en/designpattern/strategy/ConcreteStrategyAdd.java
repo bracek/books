@@ -9,7 +9,8 @@ package org.wikipedia.en.designpattern.strategy;
 // Implements the algorithm using the strategy interface
 class ConcreteStrategyAdd implements Strategy {
 
-    public int execute(int a, int b) {
+    public int execute(final int a,
+final  int b) {
         System.out.println("Called ConcreteStrategyA's execute()");
         return a + b;  // Do an addition with a and b
     }

@@ -24,7 +24,7 @@ class Pomocna {
 }
 
 public class Rovnost {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Pomocna p1 = new Pomocna(3.14);
     Pomocna p2 = new Pomocna(3.14);
     if (p1.equals(p2) == false)

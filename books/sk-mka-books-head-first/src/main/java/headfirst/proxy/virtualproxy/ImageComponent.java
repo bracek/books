@@ -6,15 +6,15 @@ import javax.swing.*;
 class ImageComponent extends JComponent {
 	private Icon icon;
 
-	public ImageComponent(Icon icon) {
+	public ImageComponent(final Icon icon) {
 		this.icon = icon;
 	}
 
-	public void setIcon(Icon icon) {
+	public void setIcon(final Icon icon) {
 		this.icon = icon;
 	}
 
-	public void paintComponent(Graphics g) {
+	public void paintComponent(final Graphics g) {
 		super.paintComponent(g);
 		int w = icon.getIconWidth();
 		int h = icon.getIconHeight();

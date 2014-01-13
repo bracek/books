@@ -9,12 +9,14 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	private int numReadings;
 	private WeatherData weatherData;
 
-	public StatisticsDisplay(WeatherData weatherData) {
+	public StatisticsDisplay(final WeatherData weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 
-	public void update(float temp, float humidity, float pressure) {
+	public void update(final float temp,
+final  float humidity,
+final  float pressure) {
 		tempSum += temp;
 		numReadings++;
 

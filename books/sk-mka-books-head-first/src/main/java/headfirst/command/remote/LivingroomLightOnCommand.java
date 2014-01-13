@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class LivingroomLightOnCommand implements Command {
 	Light light;
 
-	public LivingroomLightOnCommand(Light light) {
+	public LivingroomLightOnCommand(final Light light) {
 		this.light = light;
 	}
 

@@ -1,7 +1,7 @@
 package com.javapapers.designpattern.composite;
 
 public class ImplementComposite {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// Initialize three blocks
 		Block block1 = new Block();
 		Block block2 = new Block();

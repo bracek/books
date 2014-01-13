@@ -47,7 +47,7 @@ class SingletonException extends RuntimeException {
         super();
     }
 
-    public SingletonException(String s) {
+    public SingletonException(final String s) {
         super(s);
     }
 }

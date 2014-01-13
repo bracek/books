@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap18;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -19,10 +19,10 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap18;
 import java.util.*;
 
 public class CalendarZiskaniHodnot {
-  public static void p(String tisk) {
+  public static void p(final String tisk) {
     System.out.println(tisk);
   }
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Calendar cal = Calendar.getInstance();
     p("ERA: " + cal.get(Calendar.ERA));
     p("YEAR: " + cal.get(Calendar.YEAR));

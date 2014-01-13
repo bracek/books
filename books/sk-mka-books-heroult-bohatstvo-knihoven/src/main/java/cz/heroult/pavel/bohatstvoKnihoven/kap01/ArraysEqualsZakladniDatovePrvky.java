@@ -5,7 +5,7 @@ import java.util.*;
 public class ArraysEqualsZakladniDatovePrvky {
   final static int POCET = 10;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int[] pole1 = new int[POCET];
     int[] pole2 = new int[POCET * 2];
     int[] pole3 = new int[POCET];

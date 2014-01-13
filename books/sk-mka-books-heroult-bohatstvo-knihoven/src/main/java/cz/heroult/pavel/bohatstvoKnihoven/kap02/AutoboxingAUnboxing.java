@@ -19,7 +19,7 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap02;
 import java.util.*;
 
 public class AutoboxingAUnboxing {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     ArrayList<Integer> ar = new ArrayList<Integer>();
     ar.add(1);                     // autoboxing 
     ar.add(new Integer(2));

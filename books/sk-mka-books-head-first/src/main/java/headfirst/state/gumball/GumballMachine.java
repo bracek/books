@@ -10,7 +10,7 @@ public class GumballMachine {
 	int state = SOLD_OUT;
 	int count = 0;
   
-	public GumballMachine(int count) {
+	public GumballMachine(final int count) {
 		this.count = count;
 		if (count > 0) {
 			state = NO_QUARTER;
@@ -79,7 +79,7 @@ public class GumballMachine {
 		}
 	}
  
-	public void refill(int numGumBalls) {
+	public void refill(final int numGumBalls) {
 		this.count = numGumBalls;
 		state = NO_QUARTER;
 	}

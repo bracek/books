@@ -2,7 +2,7 @@ package headfirst.factory.pizzas;
 
 public class SimplePizzaFactory {
 
-	public Pizza createPizza(String type) {
+	public Pizza createPizza(final String type) {
 		Pizza pizza = null;
 
 		if (type.equals("cheese")) {

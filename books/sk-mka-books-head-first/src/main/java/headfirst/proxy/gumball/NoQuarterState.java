@@ -3,7 +3,7 @@ package headfirst.proxy.gumball;
 public class NoQuarterState implements State {
     transient GumballMachine gumballMachine;
  
-    public NoQuarterState(GumballMachine gumballMachine) {
+    public NoQuarterState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
  

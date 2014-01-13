@@ -4,13 +4,13 @@ import java.util.*;
 
 public abstract class MenuComponent {
    
-	public void add(MenuComponent menuComponent) {
+	public void add(final MenuComponent menuComponent) {
 		throw new UnsupportedOperationException();
 	}
-	public void remove(MenuComponent menuComponent) {
+	public void remove(final MenuComponent menuComponent) {
 		throw new UnsupportedOperationException();
 	}
-	public MenuComponent getChild(int i) {
+	public MenuComponent getChild(final int i) {
 		throw new UnsupportedOperationException();
 	}
   

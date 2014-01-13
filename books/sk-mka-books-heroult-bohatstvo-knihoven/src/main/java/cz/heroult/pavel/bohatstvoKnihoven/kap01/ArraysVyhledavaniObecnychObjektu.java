@@ -15,7 +15,7 @@ class Person implements Comparable<Person> {
         this.popis = popis;
     }
 
-    public int compareTo(Person os) {
+    public int compareTo(final Person os) {
         return this.vyska - os.vyska;
     }
 
@@ -26,21 +26,24 @@ class Person implements Comparable<Person> {
 
 class KomparatorPersonPodleVysky implements Comparator<Person> {
 
-    public int compare(Person os1, Person os2) {
+    public int compare(final Person os1,
+final  Person os2) {
         return os1.vyska - os2.vyska;
     }
 }
 
 class KomparatorPersonPodleVahy implements Comparator<Person> {
 
-    public int compare(Person os1, Person os2) {
+    public int compare(final Person os1,
+final  Person os2) {
         return (int) (os1.vaha - os2.vaha);
     }
 }
 
 class KomparatorPersonPodlePopisu implements Comparator<Person> {
 
-    public int compare(Person os1, Person os2) {
+    public int compare(final Person os1,
+final  Person os2) {
         String s1 = os1.popis;
         String s2 = os2.popis;
         return s1.compareTo(s2);
@@ -69,7 +72,7 @@ public class ArraysVyhledavaniObecnychObjektu {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         poleOsob = new Person[4];
         poleOsob[0] = new Person(186, 82.5, "muz");
         poleOsob[1] = new Person(172, 63.0, "zena");

@@ -5,7 +5,8 @@ package com.javapapers.designpattern.bridge;
  */
 public class Car extends Vehicle {
 
-	public Car(Workshop workShop1, Workshop workShop2) {
+	public Car(final Workshop workShop1,
+final  Workshop workShop2) {
 		super(workShop1, workShop2);
 	}
 

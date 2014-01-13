@@ -16,11 +16,11 @@ class MalaOsoba implements Comparable<MalaOsoba> {
   }
 
 /*  // jednodussi a lepsi pro "mala" cisla
-  public int compareTo(MalaOsoba os) {
+  public int compareTo(final MalaOsoba os) {
     return this.vyska - os.vyska;
   }
 */
-  public int compareTo(MalaOsoba os) {
+  public int compareTo(final MalaOsoba os) {
     if (this.vyska > os.vyska)
       return +1;
     else if (this.vyska == os.vyska)
@@ -37,7 +37,7 @@ class MalaOsoba implements Comparable<MalaOsoba> {
 public class ArraysPrirozeneRazeniObecnychObjektu {
   static MalaOsoba[] poleOsob;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     poleOsob = new MalaOsoba[4];
     poleOsob[0] = new MalaOsoba(186, 82.5, "muz");
     poleOsob[1] = new MalaOsoba(172, 63.0, "zena");

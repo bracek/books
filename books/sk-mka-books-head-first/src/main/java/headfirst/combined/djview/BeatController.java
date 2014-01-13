@@ -4,7 +4,7 @@ public class BeatController implements ControllerInterface {
 	BeatModelInterface model;
 	DJView view;
    
-	public BeatController(BeatModelInterface model) {
+	public BeatController(final BeatModelInterface model) {
 		this.model = model;
 		view = new DJView(this, model);
         view.createView();
@@ -36,7 +36,7 @@ public class BeatController implements ControllerInterface {
         model.setBPM(bpm - 1);
   	}
   
- 	public void setBPM(int bpm) {
+ 	public void setBPM(final int bpm) {
 		model.setBPM(bpm);
 	}
 }

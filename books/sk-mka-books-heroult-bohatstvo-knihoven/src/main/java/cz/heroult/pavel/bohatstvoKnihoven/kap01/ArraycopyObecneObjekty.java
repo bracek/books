@@ -13,7 +13,7 @@ class Cele {
 public class ArraycopyObecneObjekty {
   final static int POCET = 5;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Cele[] pole1 = new Cele[POCET];
     Cele[] pole2 = new Cele[POCET * 2];
 

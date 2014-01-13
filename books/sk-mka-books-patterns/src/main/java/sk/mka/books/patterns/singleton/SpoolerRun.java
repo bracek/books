@@ -8,7 +8,7 @@ package sk.mka.books.patterns.singleton;
  */
 public class SpoolerRun {
 
-    static public void main(String argv[]) {
+    static public void main(final String argv[]) {
         //open one printer--this should always work
         System.out.println("Opening one spooler");
         try {

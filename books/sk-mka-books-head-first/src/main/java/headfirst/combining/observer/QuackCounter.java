@@ -4,7 +4,7 @@ public class QuackCounter implements Quackable {
 	Quackable duck;
 	static int numberOfQuacks;
   
-	public QuackCounter(Quackable duck) {
+	public QuackCounter(final Quackable duck) {
 		this.duck = duck;
 	}
   
@@ -17,7 +17,7 @@ public class QuackCounter implements Quackable {
 		return numberOfQuacks;
 	}
  
-	public void registerObserver(Observer observer) {
+	public void registerObserver(final Observer observer) {
 		duck.registerObserver(observer);
 	}
  

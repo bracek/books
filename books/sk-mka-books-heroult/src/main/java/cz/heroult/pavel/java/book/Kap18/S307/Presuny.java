@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap18.S307;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -18,7 +18,7 @@ package cz.heroult.pavel.java.book.Kap18.S307;
 import java.io.*;
 
 public class Presuny {
-  public static void main(String[] args) throws IOException {
+  public static void main(final String[] args) throws IOException {
     File frJm = new File("a.txt");
     FileReader fr = new FileReader(frJm);
 
@@ -33,9 +33,9 @@ public class Presuny {
       fw.write(c);
     }
 
-    fr.close();  // ponìkud nepøehledný pøesun na zaè. souboru
+    fr.close();  // ponï¿½kud nepï¿½ehlednï¿½ pï¿½esun na zaï¿½. souboru
     fr = new FileReader(frJm);
-//    fr.reset();   // není tímto proudem podporováno
+//    fr.reset();   // nenï¿½ tï¿½mto proudem podporovï¿½no
 
     fw.close();
     fw = new FileWriter("b.txt", true);

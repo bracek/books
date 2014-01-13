@@ -4,7 +4,8 @@ public class Duck implements Comparable {
 	String name;
 	int weight;
   
-	public Duck(String name, int weight) {
+	public Duck(final String name,
+final  int weight) {
 		this.name = name;
 		this.weight = weight;
 	}
@@ -15,7 +16,7 @@ public class Duck implements Comparable {
  
  
   
-	public int compareTo(Object object) {
+	public int compareTo(final Object object) {
  
 		Duck otherDuck = (Duck)object;
   

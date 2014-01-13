@@ -6,7 +6,7 @@ public class ArrayListIterator implements Iterator {
 	ArrayList items;
 	int position = 0;
  
-	public ArrayListIterator(ArrayList items) {
+	public ArrayListIterator(final ArrayList items) {
 		this.items = items;
 	}
  

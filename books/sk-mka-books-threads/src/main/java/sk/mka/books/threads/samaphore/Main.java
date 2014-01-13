@@ -9,7 +9,7 @@ import java.util.concurrent.Semaphore;
  */
 public class Main {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(final String args[]) throws Exception {
         Semaphore sem = new Semaphore(1, true);
         Thread thrdA = new Thread(new SyncOutput(sem, "Message 1"));
         Thread thrdB = new Thread(new SyncOutput(sem, "Message 2!"));

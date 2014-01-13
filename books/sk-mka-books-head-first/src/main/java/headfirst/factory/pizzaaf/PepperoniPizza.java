@@ -3,7 +3,7 @@ package headfirst.factory.pizzaaf;
 public class PepperoniPizza extends Pizza {
 	PizzaIngredientFactory ingredientFactory;
  
-	public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
+	public PepperoniPizza(final PizzaIngredientFactory ingredientFactory) {
 		this.ingredientFactory = ingredientFactory;
 	}
  

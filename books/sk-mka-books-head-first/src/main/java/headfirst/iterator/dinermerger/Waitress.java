@@ -4,7 +4,8 @@ public class Waitress {
 	PancakeHouseMenu pancakeHouseMenu;
 	DinerMenu dinerMenu;
  
-	public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+	public Waitress(final PancakeHouseMenu pancakeHouseMenu,
+final  DinerMenu dinerMenu) {
 		this.pancakeHouseMenu = pancakeHouseMenu;
 		this.dinerMenu = dinerMenu;
 	}
@@ -19,7 +20,7 @@ public class Waitress {
 		printMenu(dinerIterator);
 	}
  
-	private void printMenu(Iterator iterator) {
+	private void printMenu(final Iterator iterator) {
 		while (iterator.hasNext()) {
 			MenuItem menuItem = (MenuItem)iterator.next();
 			System.out.print(menuItem.getName() + ", ");
@@ -33,7 +34,7 @@ public class Waitress {
 		printVegetarianMenu(dinerMenu.createIterator());
 	}
  
-	public boolean isItemVegetarian(String name) {
+	public boolean isItemVegetarian(final String name) {
 		Iterator breakfastIterator = pancakeHouseMenu.createIterator();
 		if (isVegetarian(name, breakfastIterator)) {
 			return true;
@@ -46,7 +47,7 @@ public class Waitress {
 	}
 
 
-	private void printVegetarianMenu(Iterator iterator) {
+	private void printVegetarianMenu(final Iterator iterator) {
 		while (iterator.hasNext()) {
 			MenuItem menuItem = (MenuItem)iterator.next();
 			if (menuItem.isVegetarian()) {
@@ -57,7 +58,8 @@ public class Waitress {
 		}
 	}
 
-	private boolean isVegetarian(String name, Iterator iterator) {
+	private boolean isVegetarian(final String name,
+final  Iterator iterator) {
 		while (iterator.hasNext()) {
 			MenuItem menuItem = (MenuItem)iterator.next();
 			if (menuItem.getName().equals(name)) {

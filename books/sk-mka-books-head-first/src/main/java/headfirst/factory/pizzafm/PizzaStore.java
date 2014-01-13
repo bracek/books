@@ -4,7 +4,7 @@ public abstract class PizzaStore {
  
 	abstract Pizza createPizza(String item);
  
-	public Pizza orderPizza(String type) {
+	public Pizza orderPizza(final String type) {
 		Pizza pizza = createPizza(type);
 		System.out.println("--- Making a " + pizza.getName() + " ---");
 		pizza.prepare();

@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class CeilingFanOnCommand implements Command {
 	CeilingFan ceilingFan;
 
-	public CeilingFanOnCommand(CeilingFan ceilingFan) {
+	public CeilingFanOnCommand(final CeilingFan ceilingFan) {
 		this.ceilingFan = ceilingFan;
 	}
 	public void execute() {

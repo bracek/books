@@ -1,7 +1,7 @@
 package headfirst.combining.factory;
 
 public class DuckSimulator {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		DuckSimulator simulator = new DuckSimulator();
 		AbstractDuckFactory duckFactory = new CountingDuckFactory();
  

@@ -3,7 +3,7 @@ package headfirst.adapter.ducks;
 public class TurkeyAdapter implements Duck {
 	Turkey turkey;
  
-	public TurkeyAdapter(Turkey turkey) {
+	public TurkeyAdapter(final Turkey turkey) {
 		this.turkey = turkey;
 	}
     

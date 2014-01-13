@@ -3,7 +3,7 @@ package headfirst.adapter.iterenum;
 import java.util.*;
 
 public class EI {
-	public static void main (String args[]) {
+	public static void main (final String args[]) {
 		Vector v = new Vector(Arrays.asList(args));
 		Enumeration enumeration = v.elements();
 		while (enumeration.hasMoreElements()) {

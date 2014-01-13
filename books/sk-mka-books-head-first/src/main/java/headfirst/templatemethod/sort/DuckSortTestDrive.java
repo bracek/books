@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class DuckSortTestDrive {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Duck[] ducks = { 
 						new Duck("Daffy", 8), 
 						new Duck("Dewey", 2),
@@ -24,7 +24,7 @@ public class DuckSortTestDrive {
 		display(ducks);
 	}
 
-	public static void display(Duck[] ducks) {
+	public static void display(final Duck[] ducks) {
 		for (int i = 0; i < ducks.length; i++) {
 			System.out.println(ducks[i]);
 		}

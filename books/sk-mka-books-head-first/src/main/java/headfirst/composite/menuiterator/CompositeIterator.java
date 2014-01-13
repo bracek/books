@@ -6,7 +6,7 @@ import java.util.*;
 public class CompositeIterator implements Iterator {
 	Stack stack = new Stack();
    
-	public CompositeIterator(Iterator iterator) {
+	public CompositeIterator(final Iterator iterator) {
 		stack.push(iterator);
 	}
    

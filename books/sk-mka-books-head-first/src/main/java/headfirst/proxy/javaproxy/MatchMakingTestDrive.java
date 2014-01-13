@@ -6,7 +6,7 @@ import java.util.*;
 public class MatchMakingTestDrive {
 	Hashtable datingDB = new Hashtable();
  	
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		MatchMakingTestDrive test = new MatchMakingTestDrive();
 		test.drive();
 	}

@@ -3,7 +3,7 @@ package headfirst.decorator.starbuzz;
 public class Milk extends CondimentDecorator {
 	Beverage beverage;
 
-	public Milk(Beverage beverage) {
+	public Milk(final Beverage beverage) {
 		this.beverage = beverage;
 	}
 

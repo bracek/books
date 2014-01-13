@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap02.S28;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -19,7 +19,7 @@ import java.io.*;
 import java.util.*;
 
 public class Soubory2 {
-  public static void main(String[] argv) throws IOException{
+  public static void main(final String[] argv) throws IOException{
     File soub = new File("b.txt");
     File adr = new File("TMP");
 
@@ -33,8 +33,8 @@ public class Soubory2 {
     soub.renameTo(jiny);
     adr.renameTo(new File("TMP-OLD"));
 
-    soub.delete();   // nevymaže c.txt
-    adr.delete();    // nevymaže TMP-OLD
-    jiny.delete();   // skuteèné vymazání c.txt
+    soub.delete();   // nevymaï¿½e c.txt
+    adr.delete();    // nevymaï¿½e TMP-OLD
+    jiny.delete();   // skuteï¿½nï¿½ vymazï¿½nï¿½ c.txt
   }
 }

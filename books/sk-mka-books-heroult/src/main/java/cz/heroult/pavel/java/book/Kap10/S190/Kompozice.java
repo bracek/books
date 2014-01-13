@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap10.S190;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -18,13 +18,15 @@ class Datum {
 
     public int den,  mesic,  rok;
 
-    public Datum(int den, int mesic, int rok) {
+    public Datum(final int den,
+final  int mesic,
+final  int rok) {
         this.den = den;
         this.mesic = mesic;
         this.rok = rok;
     }
 
-    public Datum(Datum d) {
+    public Datum(final Datum d) {
         this(d.den, d.mesic, d.rok);
     }
 
@@ -38,7 +40,9 @@ class Zamestnanec {
     public String jmeno;
     public Datum narozeni,  nastup;
 
-    public Zamestnanec(String jmeno, Datum narozeni, Datum nastup) {
+    public Zamestnanec(final String jmeno,
+final  Datum narozeni,
+final  Datum nastup) {
         this.jmeno = new String(jmeno);
         this.narozeni = new Datum(narozeni);
         this.nastup = new Datum(nastup);
@@ -54,7 +58,7 @@ class Zamestnanec {
 
 public class Kompozice {
 
-    public static void main(String[] argv) {
+    public static void main(final String[] argv) {
         Datum narozeni = new Datum(21, 5, 1960);
 //    Datum nastup = new Datum(1, 10, 1990);
 //    Zamestnanec z = new Zamestnanec("Josef Novak", narozeni, nastup);

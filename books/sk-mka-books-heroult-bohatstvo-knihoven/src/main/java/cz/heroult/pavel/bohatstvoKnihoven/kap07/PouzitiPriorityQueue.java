@@ -3,15 +3,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap07;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      //
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      //
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      //
 //                                                             //
@@ -24,14 +24,16 @@ class Vojak implements Comparable<Vojak> {
     private String hodnost;
     private String typVojska;
 
-    public Vojak(int pocetHvezdicek, String hodnost, String typVojska) {
+    public Vojak(final int pocetHvezdicek,
+final  String hodnost,
+final  String typVojska) {
         this.pocetHvezdicek = pocetHvezdicek;
         this.hodnost = hodnost;
         this.typVojska = typVojska;
     }
 
     // prirozene razeni je v armade sestupne ;-)
-    public int compareTo(Vojak v) {
+    public int compareTo(final Vojak v) {
         return v.pocetHvezdicek - this.pocetHvezdicek;
     }
 
@@ -42,7 +44,7 @@ class Vojak implements Comparable<Vojak> {
 
 public class PouzitiPriorityQueue {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Queue<Vojak> kantyna = new PriorityQueue<Vojak>();
         kantyna.add(new Vojak(1, "major", "letectvo"));
         kantyna.add(new Vojak(3, "plukovnik", "pechota"));

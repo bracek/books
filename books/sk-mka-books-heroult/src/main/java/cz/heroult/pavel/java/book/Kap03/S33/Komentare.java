@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap03.S33;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -17,21 +17,21 @@ package cz.heroult.pavel.java.book.Kap03.S33;
 
 public class Komentare {
 
-  /* metoda vypoète obsah kruhu
-     parametrem je polomìr kružnice
-     -- typický komentáø pøes více øádek */
+  /* metoda vypoï¿½te obsah kruhu
+     parametrem je polomï¿½r kruï¿½nice
+     -- typickï¿½ komentï¿½ï¿½ pï¿½es vï¿½ce ï¿½ï¿½dek */
   static double obsahKruhu(double r) {
     return r * r * Math.PI;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int utrata;
     int pocetPiv = 5;
 
-    utrata = pocetPiv * 15;  // typický jednoøádkový komentáø
+    utrata = pocetPiv * 15;  // typickï¿½ jednoï¿½ï¿½dkovï¿½ komentï¿½ï¿½
     System.out.println("Utrata = " + utrata);
 
-    utrata = pocetPiv * /* 15 */ 20;  /* 15 je pro desítku */
+    utrata = pocetPiv * /* 15 */ 20;  /* 15 je pro desï¿½tku */
     System.out.println("Utrata = " + utrata);
 
     System.out.println("Obsah kruhu o polomeru 5 = " + obsahKruhu(5.0));

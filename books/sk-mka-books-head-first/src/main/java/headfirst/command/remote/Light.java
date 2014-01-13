@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class Light {
 	String location = "";
 
-	public Light(String location) {
+	public Light(final String location) {
 		this.location = location;
 	}
 

@@ -4,7 +4,7 @@ public class OnCommand implements Command {
 
 	private ConsumerElectronics ce;
 
-	public OnCommand(ConsumerElectronics ce) {
+	public OnCommand(final ConsumerElectronics ce) {
 		this.ce = ce;
 	}
 

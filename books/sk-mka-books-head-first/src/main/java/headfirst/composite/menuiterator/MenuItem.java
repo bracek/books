@@ -10,10 +10,10 @@ public class MenuItem extends MenuComponent {
 	boolean vegetarian;
 	double price;
     
-	public MenuItem(String name, 
-	                String description, 
-	                boolean vegetarian, 
-	                double price) 
+	public MenuItem(final String name,
+final  	                String description,
+final  	                boolean vegetarian,
+final  	                double price) 
 	{ 
 		this.name = name;
 		this.description = description;

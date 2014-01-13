@@ -6,7 +6,7 @@ public class AlternatingDinerMenuIterator implements Iterator {
 	MenuItem[] list;
 	int position;
 
-	public AlternatingDinerMenuIterator(MenuItem[] list) {
+	public AlternatingDinerMenuIterator(final MenuItem[] list) {
 		this.list = list;
 		Calendar rightNow = Calendar.getInstance();
 		position = rightNow.DAY_OF_WEEK % 2;

@@ -3,7 +3,7 @@ package headfirst.proxy.gumball;
 public class SoldState implements State {
     transient GumballMachine gumballMachine;
  
-    public SoldState(GumballMachine gumballMachine) {
+    public SoldState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
        

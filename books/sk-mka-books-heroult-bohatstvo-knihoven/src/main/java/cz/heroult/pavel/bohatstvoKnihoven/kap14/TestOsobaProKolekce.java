@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap14;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -33,8 +33,10 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
     private static final Collator COL =
             Collator.getInstance(new Locale("cs", "CZ"));
 
-    public OsobaProKolekce(String krestni, String prijmeni,
-            int vyska, double vaha) {
+    public OsobaProKolekce(final String krestni,
+final  String prijmeni,
+final             int vyska,
+final  double vaha) {
         if (krestni == null || prijmeni == null) {
             throw new NullPointerException();
         }
@@ -52,14 +54,14 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
         return prijmeni;
     }
 
-    public void setVyska(int vyska) {
+    public void setVyska(final int vyska) {
         if (vyska <= 0) {
             throw new IllegalArgumentException("vyska=" + vyska);
         }
         this.vyska = vyska;
     }
 
-    public void setVaha(double vaha) {
+    public void setVaha(final double vaha) {
         if (vaha <= 0) {
             throw new IllegalArgumentException("vaha=" + vaha);
         }
@@ -81,7 +83,7 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(final Object o) {
         if (o == this) {
             return true;
         }
@@ -109,7 +111,7 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
     }
 
     // prirozene razeni
-    public int compareTo(OsobaProKolekce opk) {
+    public int compareTo(final OsobaProKolekce opk) {
         int tmpP = COL.compare(this.prijmeni, opk.prijmeni);
         int tmpK = COL.compare(this.krestni, opk.krestni);
         return (tmpP == 0 ? tmpK : tmpP);
@@ -119,14 +121,16 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
     public static final Comparator<OsobaProKolekce> PODLE_VYSKY =
             new Comparator<OsobaProKolekce>() {
 
-                public int compare(OsobaProKolekce o1, OsobaProKolekce o2) {
+                public int compare(final OsobaProKolekce o1,
+final  OsobaProKolekce o2) {
                     return o1.vyska - o2.vyska;
                 }
             };
     public static final Comparator<OsobaProKolekce> PODLE_VAHY =
             new Comparator<OsobaProKolekce>() {
 
-                public int compare(OsobaProKolekce o1, OsobaProKolekce o2) {
+                public int compare(final OsobaProKolekce o1,
+final  OsobaProKolekce o2) {
                     if (o1.longVaha == o2.longVaha) {
                         return 0;
                     }
@@ -141,7 +145,8 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
     public static final Comparator<OsobaProKolekce> PODLE_JMENA =
             new Comparator<OsobaProKolekce>() {
 
-                public int compare(OsobaProKolekce o1, OsobaProKolekce o2) {
+                public int compare(final OsobaProKolekce o1,
+final  OsobaProKolekce o2) {
                     int tmpP = COL.compare(o1.prijmeni, o2.prijmeni);
                     int tmpK = COL.compare(o1.krestni, o2.krestni);
                     return (tmpP == 0 ? tmpK : tmpP);
@@ -151,29 +156,29 @@ class OsobaProKolekce implements Comparable<OsobaProKolekce> {
 
 public class TestOsobaProKolekce {
 
-    public static void main(String[] argv) throws IOException {
+    public static void main(final String[] argv) throws IOException {
         OutputStreamWriter o = new OutputStreamWriter(System.out, "Cp852");
         PrintWriter p = new PrintWriter(o);
 
         ArrayList<OsobaProKolekce> a = new ArrayList<OsobaProKolekce>();
-        a.add(new OsobaProKolekce("Karel", "Chytrý", 160, 60.));
-        a.add(new OsobaProKolekce("Karel", "Ètvrtý", 170, 70.));
-        a.add(new OsobaProKolekce("Karel", "Ctvrtý", 180, 80.));
-        a.add(new OsobaProKolekce("Josef", "Ètvrtý", 190, 65.));
-        a.add(new OsobaProKolekce("Kárel", "Ètvrtý", 200, 90.));
+        a.add(new OsobaProKolekce("Karel", "Chytrï¿½", 160, 60.));
+        a.add(new OsobaProKolekce("Karel", "ï¿½tvrtï¿½", 170, 70.));
+        a.add(new OsobaProKolekce("Karel", "Ctvrtï¿½", 180, 80.));
+        a.add(new OsobaProKolekce("Josef", "ï¿½tvrtï¿½", 190, 65.));
+        a.add(new OsobaProKolekce("Kï¿½rel", "ï¿½tvrtï¿½", 200, 90.));
         p.println(a);
 
         Collections.sort(a);
-        p.println("Podle jména (pøirozené øazení)\n" + a);
+        p.println("Podle jmï¿½na (pï¿½irozenï¿½ ï¿½azenï¿½)\n" + a);
         Collections.sort(a, OsobaProKolekce.PODLE_VYSKY);
-        p.println("Podle výšky\n" + a);
+        p.println("Podle vï¿½ky\n" + a);
         Collections.sort(a, OsobaProKolekce.PODLE_VAHY);
-        p.println("Podle váhy\n" + a);
+        p.println("Podle vï¿½hy\n" + a);
         Collections.sort(a, OsobaProKolekce.PODLE_JMENA);
-        p.println("Podle jména\n" + a);
+        p.println("Podle jmï¿½na\n" + a);
         p.flush();
 
-        a.add(new OsobaProKolekce("Jan", "Záporný", 0, -5.));
+        a.add(new OsobaProKolekce("Jan", "Zï¿½pornï¿½", 0, -5.));
     }
 }
 

@@ -10,7 +10,7 @@ public class SimpleRemoteControl {
  
 	public SimpleRemoteControl() {}
  
-	public void setCommand(Command command) {
+	public void setCommand(final Command command) {
 		slot = command;
 	}
  

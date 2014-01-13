@@ -30,8 +30,10 @@ public class PancakeHouseMenu implements Menu {
 			3.59);
 	}
 
-	public void addItem(String name, String description,
-	                    boolean vegetarian, double price)
+	public void addItem(final String name,
+final  String description,
+final 	                    boolean vegetarian,
+final  double price)
 	{
 		MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
 		menuItems.add(menuItem);

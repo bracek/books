@@ -44,7 +44,7 @@ public class Melka implements Cloneable {
     return k;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Pomocna p = new Pomocna(3.14);
     Melka kopie, orig = new Melka(5, p);
     kopie = (Melka) orig.clone();

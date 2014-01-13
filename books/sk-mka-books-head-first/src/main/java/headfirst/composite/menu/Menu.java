@@ -8,20 +8,21 @@ public class Menu extends MenuComponent {
 	String name;
 	String description;
   
-	public Menu(String name, String description) {
+	public Menu(final String name,
+final  String description) {
 		this.name = name;
 		this.description = description;
 	}
  
-	public void add(MenuComponent menuComponent) {
+	public void add(final MenuComponent menuComponent) {
 		menuComponents.add(menuComponent);
 	}
  
-	public void remove(MenuComponent menuComponent) {
+	public void remove(final MenuComponent menuComponent) {
 		menuComponents.remove(menuComponent);
 	}
  
-	public MenuComponent getChild(int i) {
+	public MenuComponent getChild(final int i) {
 		return (MenuComponent)menuComponents.get(i);
 	}
  

@@ -13,7 +13,7 @@ class PorOsoba implements Comparable<PorOsoba> {
     this.popis = popis;
   }
 
-  public int compareTo(PorOsoba os) {
+  public int compareTo(final PorOsoba os) {
     return this.vyska - os.vyska;
   }
 
@@ -23,21 +23,24 @@ class PorOsoba implements Comparable<PorOsoba> {
 
   public static final Comparator<PorOsoba> PODLE_VYSKY = 
     new Comparator<PorOsoba>() {
-    public int compare(PorOsoba os1, PorOsoba os2) {
+    public int compare(final PorOsoba os1,
+final  PorOsoba os2) {
       return os1.vyska - os2.vyska;
     }
   };
 
   public static final Comparator<PorOsoba> PODLE_VAHY = 
     new Comparator<PorOsoba>() {
-    public int compare(PorOsoba os1, PorOsoba os2) {
+    public int compare(final PorOsoba os1,
+final  PorOsoba os2) {
       return (int) (os1.vaha - os2.vaha);
     }
   };
 
   public static final Comparator<PorOsoba> PODLE_POPISU = 
     new Comparator<PorOsoba>() {
-    public int compare(PorOsoba os1, PorOsoba os2) {
+    public int compare(final PorOsoba os1,
+final  PorOsoba os2) {
       return os1.popis.compareTo(os2.popis);
     }
   };
@@ -47,7 +50,7 @@ class PorOsoba implements Comparable<PorOsoba> {
 public class TestPorovnatelnaOsoba {
   static PorOsoba[] poleOsob;
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     poleOsob = new PorOsoba[4];
     poleOsob[0] = new PorOsoba(186, 82.5, "muz");
     poleOsob[1] = new PorOsoba(172, 63.0, "zena");

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArraysVicerozmernaPole {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int[][] p1 = {{1, 2, 3},
             {4, 5},
             {6}};

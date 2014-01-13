@@ -11,7 +11,7 @@ public class GumballMachine {
 	State state = soldOutState;
 	int count = 0;
  
-	public GumballMachine(int numberGumballs) {
+	public GumballMachine(final int numberGumballs) {
 		soldOutState = new SoldOutState(this);
 		noQuarterState = new NoQuarterState(this);
 		hasQuarterState = new HasQuarterState(this);

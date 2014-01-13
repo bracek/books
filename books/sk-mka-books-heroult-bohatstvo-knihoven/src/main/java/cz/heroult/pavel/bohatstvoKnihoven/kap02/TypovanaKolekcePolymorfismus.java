@@ -23,7 +23,7 @@ class B extends A {
 
 public class TypovanaKolekcePolymorfismus {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         ArrayList<T> ar = new ArrayList<T>();
         ar.add(new A());
         ar.add(new B());
@@ -31,7 +31,7 @@ public class TypovanaKolekcePolymorfismus {
         tisk(ar);
     }
 
-    public static void tisk(ArrayList<? extends T> ar) {
+    public static void tisk(final ArrayList<? extends T> ar) {
         for (int i = 0; i < ar.size(); i++) {
             ar.get(i).tiskni();
         }

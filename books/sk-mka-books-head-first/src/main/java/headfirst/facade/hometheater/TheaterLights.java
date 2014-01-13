@@ -3,7 +3,7 @@ package headfirst.facade.hometheater;
 public class TheaterLights {
 	String description;
 	
-	public TheaterLights(String description) {
+	public TheaterLights(final String description) {
 		this.description = description;
 	}
   
@@ -15,7 +15,7 @@ public class TheaterLights {
 		System.out.println(description + " off");
 	}
   
-	public void dim(int level) {
+	public void dim(final int level) {
 		System.out.println(description + " dimming to " + level  + "%");
 	}
    

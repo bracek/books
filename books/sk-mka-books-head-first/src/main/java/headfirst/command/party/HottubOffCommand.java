@@ -3,7 +3,7 @@ package headfirst.command.party;
 public class HottubOffCommand implements Command {
 	Hottub hottub;
 
-	public HottubOffCommand(Hottub hottub) {
+	public HottubOffCommand(final Hottub hottub) {
 		this.hottub = hottub;
 	}
 

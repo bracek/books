@@ -4,7 +4,7 @@ import java.rmi.*;
  
 public class GumballMonitorTestDrive {
  
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		String[] location = {"rmi://santafe.mightygumball.com/gumballmachine",
 		                     "rmi://boulder.mightygumball.com/gumballmachine",
 		                     "rmi://seattle.mightygumball.com/gumballmachine"}; 

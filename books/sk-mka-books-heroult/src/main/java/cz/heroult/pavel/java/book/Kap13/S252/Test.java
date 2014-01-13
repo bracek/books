@@ -2,14 +2,14 @@ package cz.heroult.pavel.java.book.Kap13.S252;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                  Uèebnice jazyka Java                       //
+//                  Uï¿½ebnice jazyka Java                       //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       CTI_ME.TXT                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2000                      // 
 //                                                             //
@@ -41,13 +41,13 @@ class Obdelnik extends Usecka implements InfoOba {
     System.out.println(" = " + delka + ", " + sirka);
   }
 
-   public void vypisSirka() {  // není z žádného rozhraní
+   public void vypisSirka() {  // nenï¿½ z ï¿½ï¿½dnï¿½ho rozhranï¿½
     System.out.println(sirka);
   }
 }
 
 public class Test {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Usecka u = new Usecka(5);
     Obdelnik o = new Obdelnik(3, 6);
     if (u instanceof Info)

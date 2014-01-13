@@ -4,7 +4,7 @@ public class QuackCounter implements Quackable {
 	Quackable duck;
 	static int numberOfQuacks;
   
-	public QuackCounter(Quackable duck) {
+	public QuackCounter(final Quackable duck) {
 		this.duck = duck;
 	}
   

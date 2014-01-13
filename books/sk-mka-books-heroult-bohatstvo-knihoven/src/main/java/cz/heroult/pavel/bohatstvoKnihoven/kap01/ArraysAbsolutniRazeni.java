@@ -15,7 +15,7 @@ class Osoba implements Comparable<Osoba> {
     this.popis = popis;
   }
 
-  public int compareTo(Osoba os) {
+  public int compareTo(final Osoba os) {
     return this.vyska - os.vyska;
   }
 
@@ -25,19 +25,22 @@ class Osoba implements Comparable<Osoba> {
 }
 
 class KomparatorOsobyPodleVysky implements Comparator<Osoba> {
-  public int compare(Osoba os1, Osoba os2) {
+  public int compare(final Osoba os1,
+final  Osoba os2) {
     return os1.vyska - os2.vyska;
   }
 }
 
 class KomparatorOsobyPodleVahy implements Comparator<Osoba> {
-  public int compare(Osoba os1, Osoba os2) {
+  public int compare(final Osoba os1,
+final  Osoba os2) {
     return (int) (os1.vaha - os2.vaha);
   }
 }
 
 class KomparatorOsobyPodlePopisu implements Comparator<Osoba> {
-  public int compare(Osoba os1, Osoba os2) {
+  public int compare(final Osoba os1,
+final  Osoba os2) {
     String s1 = os1.popis;
     String s2 = os2.popis;
     return s1.compareTo(s2);
@@ -52,7 +55,7 @@ public class ArraysAbsolutniRazeni {
       System.out.println("[" + i + "] " + poleOsob[i]);
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     poleOsob = new Osoba[4];
     poleOsob[0] = new Osoba(186, 82.5, "muz");
     poleOsob[1] = new Osoba(172, 63.0, "zena");

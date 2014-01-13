@@ -4,7 +4,8 @@ public class Projector {
 	String description;
 	DvdPlayer dvdPlayer;
 	
-	public Projector(String description, DvdPlayer dvdPlayer) {
+	public Projector(final String description,
+final  DvdPlayer dvdPlayer) {
 		this.description = description;
 		this.dvdPlayer = dvdPlayer;
 	}

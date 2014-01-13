@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class HottubOnCommand implements Command {
 	Hottub hottub;
 
-	public HottubOnCommand(Hottub hottub) {
+	public HottubOnCommand(final Hottub hottub) {
 		this.hottub = hottub;
 	}
 

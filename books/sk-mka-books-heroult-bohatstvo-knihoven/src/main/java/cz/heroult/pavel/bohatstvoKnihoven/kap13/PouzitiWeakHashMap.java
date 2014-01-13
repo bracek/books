@@ -2,15 +2,15 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap13;
 
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// Tento zdrojový kód je souèástí distribuce balíku programù,  //
-//     poskytovaných jako doplòující informace ke knize        //
+// Tento zdrojovï¿½ kï¿½d je souï¿½ï¿½stï¿½ distribuce balï¿½ku programï¿½,  //
+//     poskytovanï¿½ch jako doplï¿½ujï¿½cï¿½ informace ke knize        //
 //                                                             //
-//                   Java -- bohatství knihoven                //
-//                II. opravené a rozšíøené vydání              //
+//                   Java -- bohatstvï¿½ knihoven                //
+//                II. opravenï¿½ a rozï¿½ï¿½ï¿½enï¿½ vydï¿½nï¿½              //
 //                                                             //
-//     Pøeètìte si, prosím, dùkladnì upozornìní v souboru      // 
+//     Pï¿½eï¿½tï¿½te si, prosï¿½m, dï¿½kladnï¿½ upozornï¿½nï¿½ v souboru      // 
 //                       Cti_me.txt                            //
-//        který je nedílnou souèástí této distribuce           //
+//        kterï¿½ je nedï¿½lnou souï¿½ï¿½stï¿½ tï¿½to distribuce           //
 //                                                             //
 //                 (c) Pavel Herout, 2006                      // 
 //                                                             //
@@ -20,10 +20,10 @@ import java.util.*;
 
 class Klic {
   private String kl;
-  public Klic(String kl) { this.kl = "k" + kl; }
+  public Klic(final String kl) { this.kl = "k" + kl; }
   public String toString() { return kl; }
   public int hashCode() { return kl.hashCode(); }
-  public boolean equals(Object o) {
+  public boolean equals(final Object o) {
     return (o instanceof Klic)
       && kl.equals(((Klic)o).kl);
   }
@@ -34,7 +34,7 @@ class Klic {
 
 class Hodnota {
   private String ho;
-  public Hodnota(String ho) { this.ho = "h" + ho; }
+  public Hodnota(final String ho) { this.ho = "h" + ho; }
   public String toString() { return ho; }
   public void finalize() {
     System.out.println("Uvolneni hodnoty: " + ho);
@@ -42,7 +42,7 @@ class Hodnota {
 }
 
 public class PouzitiWeakHashMap {
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     int n = 10;
     // mozne nastaveni pomoci prikazove radky
     if (args.length > 0) {

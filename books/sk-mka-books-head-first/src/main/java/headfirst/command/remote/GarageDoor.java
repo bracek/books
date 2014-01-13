@@ -3,7 +3,7 @@ package headfirst.command.remote;
 public class GarageDoor {
 	String location;
 
-	public GarageDoor(String location) {
+	public GarageDoor(final String location) {
 		this.location = location;
 	}
 

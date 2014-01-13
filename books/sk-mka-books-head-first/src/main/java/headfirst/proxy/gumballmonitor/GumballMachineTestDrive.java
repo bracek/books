@@ -2,7 +2,7 @@ package headfirst.proxy.gumballmonitor;
 
 public class GumballMachineTestDrive {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		int count = 0;
 
         if (args.length < 2) {
