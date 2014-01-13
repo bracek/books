@@ -21,7 +21,7 @@ public class ReadV1 extends Thread {
     static public long suma = 0;
     static public boolean hotovo = false;
 
-    public ReadV1(String filename) {
+    public ReadV1(final String filename) {
         super("Vlakno pre citanie");
         this.filename = filename;
     }

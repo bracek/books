@@ -27,7 +27,7 @@ public class Podtrieda extends Nadtrieda {
         System.out.println("Podtrieda skryvanie, toto sa neodporuca ");
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 //       Podtrieda s = new Podtrieda();
 //        s.vypis();

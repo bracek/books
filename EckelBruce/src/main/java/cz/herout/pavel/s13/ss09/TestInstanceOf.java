@@ -15,7 +15,7 @@ import cz.herout.pavel.s13.ss08.Vector;
  * @author bracek
  */
 public class TestInstanceOf {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         
         Vector vector = new Vector(10);
         Rectangle rec = new Rectangle(3,4);

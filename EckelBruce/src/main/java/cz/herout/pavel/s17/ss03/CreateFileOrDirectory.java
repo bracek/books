@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  */
 public class CreateFileOrDirectory {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
 
             String aktDir = System.getProperty("user.dir");

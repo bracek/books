@@ -11,11 +11,12 @@ class MojaVynimka2 extends Exception {
     public MojaVynimka2() {
     }
 
-    public MojaVynimka2(String zprava) {
+    public MojaVynimka2(final String zprava) {
         super(zprava);
     }
 
-    public MojaVynimka2(String zprava, int x) {
+    public MojaVynimka2(final String zprava,
+final  int x) {
         super(zprava);
         i = x;
     }
@@ -46,7 +47,7 @@ public class ExtraFeaturesc10 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         try {
             f();

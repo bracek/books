@@ -19,7 +19,7 @@ import java.util.Date;
  */
 public class Io21 {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 
         String aktDir = System.getProperty("user.dir");
         System.out.println("aktDir = " + aktDir);

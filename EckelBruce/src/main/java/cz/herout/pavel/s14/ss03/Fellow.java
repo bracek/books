@@ -14,7 +14,8 @@ public class Fellow implements Vanderable {
     int vaha;
     String profese;
 
-    public Fellow(int vaha, String profese) {
+    public Fellow(final int vaha,
+final  String profese) {
         this.vaha = vaha;
         this.profese = profese;
     }

@@ -14,7 +14,7 @@ import java.io.FilenameFilter;
  */
 public class FiltrPripony implements FilenameFilter{
 
-    public FiltrPripony(String maska) {
+    public FiltrPripony(final String maska) {
         this.maska = maska;
     }
     
@@ -35,14 +35,15 @@ public class FiltrPripony implements FilenameFilter{
      *
      * @param maska new value of maska
      */
-    public void setMaska(String maska) {
+    public void setMaska(final String maska) {
         this.maska = maska;
     }
 
     
     
 
-    public boolean accept(File dir, String name) {
+    public boolean accept(final File dir,
+final  String name) {
         if(name.lastIndexOf(maska) > 0)
             return true;
         else

@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class VyjimkaNeosetrena {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
             Scanner sc = new Scanner(new File("cisla.txt"));
             System.out.println("Precte cislo zo suboru");

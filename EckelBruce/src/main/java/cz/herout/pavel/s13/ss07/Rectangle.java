@@ -14,7 +14,8 @@ public class Rectangle extends Vector implements InfoDalsi {
 
     private int width;
 
-    public Rectangle(int length, int width) {
+    public Rectangle(final int length,
+final  int width) {
         super(length);
         this.width = width;
     }
@@ -33,7 +34,7 @@ public class Rectangle extends Vector implements InfoDalsi {
      *
      * @param width new value of width
      */
-    public void setWidth(int width) {
+    public void setWidth(final int width) {
         this.width = width;
     }
 

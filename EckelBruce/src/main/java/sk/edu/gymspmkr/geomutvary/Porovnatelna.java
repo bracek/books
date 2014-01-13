@@ -13,5 +13,5 @@ public interface Porovnatelna {
     // druhý musia byť inštanciou rovnakej triedy
     // vracia 1, 0, -1 ak tento je väčší, rovný 
     // alebo menší než druhý
-    public int jeVacsiNez(Porovnatelna druhy);
+    public int jeVacsiNez(final Porovnatelna druhy);
 }

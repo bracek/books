@@ -29,7 +29,7 @@ public class Koule implements Info {
      *
      * @param polomer new value of polomer
      */
-    public void setPolomer(int polomer) {
+    public void setPolomer(final int polomer) {
         this.polomer = polomer;
     }
 }

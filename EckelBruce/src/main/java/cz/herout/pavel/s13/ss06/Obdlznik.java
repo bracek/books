@@ -12,7 +12,8 @@ public class Obdlznik extends Usecka {
 
     private int sirka;
 
-    public Obdlznik(int delka, int sirka) {
+    public Obdlznik(final int delka,
+final  int sirka) {
         super(delka);
         this.sirka = sirka;
     }
@@ -31,7 +32,7 @@ public class Obdlznik extends Usecka {
      *
      * @param sirka new value of sirka
      */
-    public void setSirka(int sirka) {
+    public void setSirka(final int sirka) {
         this.sirka = sirka;
     }
 

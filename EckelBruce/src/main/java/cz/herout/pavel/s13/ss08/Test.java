@@ -13,7 +13,7 @@ import cz.herout.pavel.s13.ss04.InfoDalsi;
  * @author bracek
  */
 public class Test {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         
         Info iRect = new Rectangle(10, 10);
         InfoDalsi idalsiRect = new Rectangle(3, 5);

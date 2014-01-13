@@ -13,7 +13,7 @@ public class Kufr implements Vanderable{
 
     int vaha;
 
-    public Kufr(int vaha) {
+    public Kufr(final int vaha) {
         this.vaha = vaha;
     }
     

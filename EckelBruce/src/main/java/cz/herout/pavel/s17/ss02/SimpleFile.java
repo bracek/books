@@ -12,7 +12,7 @@ import java.io.File;
  * @author bracek
  */
 public class SimpleFile {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         String aktDir = System.getProperty("user.dir");
         File fileAbs = new File(aktDir, "a.txt");
         File soubRe1 = new File("TMP" + File.separator + "a.txt");

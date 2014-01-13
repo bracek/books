@@ -16,7 +16,7 @@ import java.io.IOException;
  */
 public class MyFileReader {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(final String[] args) throws FileNotFoundException, IOException {
 
         String aktDir = System.getProperty("user.dir");
         System.out.println("aktDir = " + aktDir);

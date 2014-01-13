@@ -12,6 +12,7 @@ class Bod {
     int x;
     int y;
 
-    public Bod(int i, int i0) {
+    public Bod(final int i,
+final  int i0) {
     }
 }

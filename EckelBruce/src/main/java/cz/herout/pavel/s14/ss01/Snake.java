@@ -13,7 +13,8 @@ public class Snake extends Animal {
     
         private int bodyLenght;
 
-    public Snake(String typ, int bodyLenght) {
+    public Snake(final String typ,
+final  int bodyLenght) {
         super(typ);
         this.bodyLenght = bodyLenght;
     }
@@ -38,7 +39,7 @@ public class Snake extends Animal {
      *
      * @param bodyLenght new value of bodyLenght
      */
-    public void setBodyLenght(int bodyLenght) {
+    public void setBodyLenght(final int bodyLenght) {
         this.bodyLenght = bodyLenght;
     }
 

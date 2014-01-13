@@ -18,7 +18,7 @@ public class Krabica<T> {
 
     private T t;
 
-    public void pridaj(T t) {
+    public void pridaj(final T t) {
         this.t = t;
     }
 
@@ -26,12 +26,12 @@ public class Krabica<T> {
         return t;
     }
 
-    public <U> void prezri(U u) {
+    public <U> void prezri(final U u) {
         System.out.println("T: " + t.getClass().getName());
         System.out.println("U: " + u.getClass().getName());
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Krabica<Integer> integerKrabica = new Krabica<Integer>();
         integerKrabica.pridaj(new Integer(10));
         integerKrabica.prezri("dajaký text");

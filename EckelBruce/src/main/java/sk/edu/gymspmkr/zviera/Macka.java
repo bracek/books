@@ -21,7 +21,7 @@ public class Macka extends Zviera {
         System.out.println("Metóda inštancie v triede Macka.");
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Macka mojaMacka = new Macka();
         Zviera mojeZviera = mojaMacka; //implicitny casting

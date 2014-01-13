@@ -10,7 +10,7 @@ package cz.herout.pavel.s14.ss01;
  */
 public class TestAnimal {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Animal[] animals = new Animal[6];
         for (int i = 0; i < animals.length; i++) {
             switch ((int) (1.0 + Math.random() * 3.0)) {

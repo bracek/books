@@ -18,13 +18,15 @@ public class Bicykel {
         System.out.println(". constructor Bicykel .");
     }
 
-    public Bicykel(int zacTempo, int zacRychlost, int zacPrevod) {
+    public Bicykel(final int zacTempo,
+final  int zacRychlost,
+final  int zacPrevod) {
         prevod = zacPrevod;
         tempo = zacTempo;
         rychlost = zacRychlost;
     }
     // trieda Bicykel má štyri metódy
-    public void nastavTempo(int novaHodnota) {
+    public void nastavTempo(final int novaHodnota) {
         tempo = novaHodnota;
     }
 
@@ -32,7 +34,7 @@ public class Bicykel {
         return prevod;
     }
 
-    public void setPrevod(int prevod) {
+    public void setPrevod(final int prevod) {
         this.prevod = prevod;
     }
 
@@ -40,7 +42,7 @@ public class Bicykel {
         return rychlost;
     }
 
-    public void setRychlost(int rychlost) {
+    public void setRychlost(final int rychlost) {
         this.rychlost = rychlost;
     }
 
@@ -48,19 +50,19 @@ public class Bicykel {
         return tempo;
     }
 
-    public void setTempo(int tempo) {
+    public void setTempo(final int tempo) {
         this.tempo = tempo;
     }
 
-    public void nastavPrevod(int novaHodnota) {
+    public void nastavPrevod(final int novaHodnota) {
         prevod = novaHodnota;
     }
 
-    public void brzdi(int spomalenie) {
+    public void brzdi(final int spomalenie) {
         rychlost -= spomalenie;
     }
 
-    public void pridaj(int zrychlenie) {
+    public void pridaj(final int zrychlenie) {
         rychlost += zrychlenie;
     }
 }

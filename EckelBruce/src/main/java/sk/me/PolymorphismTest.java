@@ -43,7 +43,7 @@ class Circle implements Shape {
 
 public class PolymorphismTest {
 
-    public static void main(String args[]) {
+    public static void main(final String args[]) {
         Shape[] s = {new Cube(), new Circle()};
 
         for (int i = 0; i < s.length; i++) {

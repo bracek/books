@@ -10,7 +10,7 @@ package cz.herout.pavel.s13.ss04;
  * @author bracek
  */
 public class TestDvou {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Usecka usecka = new Usecka(5);
         usecka.kdoJsem();
         usecka.vlastnosti();

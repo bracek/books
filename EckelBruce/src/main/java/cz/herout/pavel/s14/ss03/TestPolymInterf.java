@@ -10,7 +10,7 @@ package cz.herout.pavel.s14.ss03;
  * @author bracek
  */
 public class TestPolymInterf {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int vahaLidi = 0;
         Vanderable[] kusJakoKus = new Vanderable[3];
         kusJakoKus[0] = new Fellow(100, "programator");

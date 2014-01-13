@@ -12,7 +12,7 @@ import cz.herout.pavel.s13.ss03.Info;
  * @author bracek
  */
 public class Test {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Info info = new Usecka(2);
         info.kdoJsem();
        

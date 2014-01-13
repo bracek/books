@@ -16,7 +16,7 @@ public class FiltrVelikosti implements FilenameFilter {
     
     private int velikost;
 
-    public FiltrVelikosti(int velikost) {
+    public FiltrVelikosti(final int velikost) {
         this.velikost = velikost;
     }
     
@@ -35,12 +35,13 @@ public class FiltrVelikosti implements FilenameFilter {
      *
      * @param velikost new value of velikost
      */
-    public void setVelikost(int velikost) {
+    public void setVelikost(final int velikost) {
         this.velikost = velikost;
     }
 
 
-    public boolean accept(File dir, String name) {
+    public boolean accept(final File dir,
+final  String name) {
         File f = new File(dir, name);
         if(f.length() > velikost)
             return true;

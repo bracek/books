@@ -11,7 +11,7 @@ package cz.herout.pavel.s13.ss03;
 //TODO pokracovat
 public class TestKoule {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Koule koule = new Koule();
         Info info = new Usecka();
         

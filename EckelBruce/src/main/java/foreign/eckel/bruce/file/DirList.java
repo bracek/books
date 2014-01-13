@@ -13,7 +13,7 @@ import java.io.FilenameFilter;
  */
 public class DirList {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         File cesta = new File(".");
         String[] zoznam = null;
@@ -35,11 +35,12 @@ class DirFilter implements FilenameFilter {
 
     String filter;
 
-    public DirFilter(String filter) {
+    public DirFilter(final String filter) {
         this.filter = filter;
     }
 
-    public boolean accept(File dir, String name) {
+    public boolean accept(final File dir,
+final  String name) {
         String f = new File(name).getName();
         return f.indexOf(filter) != -1;
 

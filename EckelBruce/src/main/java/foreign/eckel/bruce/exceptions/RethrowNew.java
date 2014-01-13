@@ -11,14 +11,14 @@ package foreign.eckel.bruce.exceptions;
  */
 class VynimkaJenda extends Exception {
 
-    public VynimkaJenda(String s) {
+    public VynimkaJenda(final String s) {
         super(s);
     }
 }
 
 class VynimkaDve extends Exception {
 
-    public VynimkaDve(String s) {
+    public VynimkaDve(final String s) {
         super(s);
     }
 }
@@ -31,7 +31,7 @@ public class RethrowNew {
 
     }
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
             throws
             VynimkaDve {
         try {

@@ -17,7 +17,10 @@ public class HorskyBike extends Bicykel {
         System.out.println(".. constructor HorskyBike ..");
     }
     // podtrieda HorskyBike má jeden konštruktor
-    public HorskyBike(int zacVyska, int zacTempo, int zacRychlost, int zacPrevod) {
+    public HorskyBike(final int zacVyska,
+final  int zacTempo,
+final  int zacRychlost,
+final  int zacPrevod) {
         super(zacTempo, zacRychlost, zacPrevod);
         vyskaSedadla = zacVyska;
     }
@@ -26,11 +29,11 @@ public class HorskyBike extends Bicykel {
         return vyskaSedadla;
     }
 
-    public void setVyskaSedadla(int vyskaSedadla) {
+    public void setVyskaSedadla(final int vyskaSedadla) {
         this.vyskaSedadla = vyskaSedadla;
     }
     // podtrieda HorskyBike pridáva jednu metódu
-    public void nastavVysku(int novaHodnota) {
+    public void nastavVysku(final int novaHodnota) {
         vyskaSedadla = novaHodnota;
     }
 }

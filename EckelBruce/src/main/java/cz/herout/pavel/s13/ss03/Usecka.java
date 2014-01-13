@@ -17,7 +17,7 @@ public class Usecka implements Info{
         return delka;
     }
 
-    public void setDelka(int delka) {
+    public void setDelka(final int delka) {
         this.delka = delka;
     }
 

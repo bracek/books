@@ -11,7 +11,7 @@ class SimpleException extends Exception {
     public SimpleException() {
     }
 
-    public SimpleException(String message) {
+    public SimpleException(final String message) {
         super(message);
     }
 }
@@ -31,7 +31,7 @@ public class FullContructors {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         try {
             f();

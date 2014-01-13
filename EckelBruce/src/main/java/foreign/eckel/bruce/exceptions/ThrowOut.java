@@ -11,7 +11,7 @@ package foreign.eckel.bruce.exceptions;
  */
 public class ThrowOut {
 
-    public static void main(String[] args) throws Throwable {
+    public static void main(final String[] args) throws Throwable {
         try {
             throw new Throwable();
         } catch (Exception e) {

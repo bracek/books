@@ -20,7 +20,7 @@ public class Person {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(final Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -28,7 +28,7 @@ public class Person {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
@@ -36,7 +36,7 @@ public class Person {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
@@ -44,7 +44,7 @@ public class Person {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(final float weight) {
         this.weight = weight;
     }
     private float weight;

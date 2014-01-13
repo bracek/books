@@ -16,7 +16,8 @@ public class Bird extends Animal{
     
     private int windsLenght;
 
-    public Bird(String type, int windsLenght) {
+    public Bird(final String type,
+final  int windsLenght) {
         super(type);
         this.windsLenght = windsLenght;
     }
@@ -44,7 +45,7 @@ public class Bird extends Animal{
      *
      * @param windsLenght new value of windsLenght
      */
-    public void setWindsLenght(int windsLenght) {
+    public void setWindsLenght(final int windsLenght) {
         this.windsLenght = windsLenght;
     }
     private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
@@ -54,7 +55,7 @@ public class Bird extends Animal{
      *
      * @param listener
      */
-    public void addPropertyChangeListener(PropertyChangeListener listener) {
+    public void addPropertyChangeListener(final PropertyChangeListener listener) {
         propertyChangeSupport.addPropertyChangeListener(listener);
     }
 
@@ -63,7 +64,7 @@ public class Bird extends Animal{
      *
      * @param listener
      */
-    public void removePropertyChangeListener(PropertyChangeListener listener) {
+    public void removePropertyChangeListener(final PropertyChangeListener listener) {
         propertyChangeSupport.removePropertyChangeListener(listener);
     }
 

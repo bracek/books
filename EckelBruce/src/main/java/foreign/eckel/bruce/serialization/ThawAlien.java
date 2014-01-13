@@ -14,7 +14,7 @@ import java.io.ObjectInputStream;
  * @author bracek
  */
 public class ThawAlien {
-    public static void main(String[] args) throws IOException, ClassNotFoundException{
+    public static void main(final String[] args) throws IOException, ClassNotFoundException{
         ObjectInputStream vstup =
                 new ObjectInputStream(new FileInputStream("X.file"));
         Object zahada = vstup.readObject();

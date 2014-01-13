@@ -15,7 +15,7 @@ class FourtException extends Exception {
 
 public class AlwaysFinally {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("vstupujem do prveho bloku try");
 
         try {

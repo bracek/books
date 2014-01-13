@@ -15,7 +15,7 @@ public class Usecka implements Info, InfoDalsi {
 
     private int delka;
 
-    public Usecka(int delka) {
+    public Usecka(final int delka) {
         this.delka = delka;
     }
     
@@ -34,7 +34,7 @@ public class Usecka implements Info, InfoDalsi {
      *
      * @param delka new value of delka
      */
-    public void setDelka(int delka) {
+    public void setDelka(final int delka) {
         this.delka = delka;
     }
 

@@ -10,7 +10,7 @@ package sk.edu.gymspmkr.geomutvary;
  */
 public class RunPorovnajOblidznikPlus {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         ObdlznikPlus a = new ObdlznikPlus();
         a.sirka = 10;
         a.vyska = 10;

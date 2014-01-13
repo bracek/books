@@ -19,24 +19,28 @@ public class ObdlznikPlus implements Porovnatelna {
         zacBod = new Bod(0, 0);
     }
 
-    public ObdlznikPlus(Bod p) {
+    public ObdlznikPlus(final Bod p) {
         zacBod = p;
     }
 
-    public ObdlznikPlus(int w, int h) {
+    public ObdlznikPlus(final int w,
+final  int h) {
         zacBod = new Bod(0, 0);
         sirka = w;
         vyska = h;
     }
 
-    public ObdlznikPlus(Bod p, int w, int h) {
+    public ObdlznikPlus(final Bod p,
+final  int w,
+final  int h) {
         zacBod = p;
         sirka = w;
         vyska = h;
     }
 
     // metóda presúvajúca obdĺžnik
-    public void presun(int x, int y) {
+    public void presun(final int x,
+final  int y) {
         zacBod.x = x;
         zacBod.y = y;
     }
@@ -46,7 +50,7 @@ public class ObdlznikPlus implements Porovnatelna {
         return sirka * vyska;
     }
     // metóda implementujúca metódu rozhrania Porovnatelna
-    public int jeVacsiNez(Porovnatelna druhy) {
+    public int jeVacsiNez(final Porovnatelna druhy) {
 //        ObdlznikPlus druhyObdlznik = (ObdlznikPlus) druhy;
         ObdlznikPlus druhyObdlznik = (ObdlznikPlus) druhy;
         if (this.vratObsah() < druhyObdlznik.vratObsah()) {
@@ -58,7 +62,8 @@ public class ObdlznikPlus implements Porovnatelna {
         }
     }
 
-    public Object NajdiVacsi(Object objekt1, Object objekt2) {
+    public Object NajdiVacsi(final Object objekt1,
+final  Object objekt2) {
         Porovnatelna obj1 = (Porovnatelna) objekt1;
         Porovnatelna obj2 = (Porovnatelna) objekt2;
         if ((obj1).jeVacsiNez(obj2) > 0) {
@@ -68,7 +73,8 @@ public class ObdlznikPlus implements Porovnatelna {
         }
     }
 
-    public Object najdiMensi(Object objekt1, Object objekt2) {
+    public Object najdiMensi(final Object objekt1,
+final  Object objekt2) {
         Porovnatelna obj1 = (Porovnatelna) objekt1;
         Porovnatelna obj2 = (Porovnatelna) objekt2;
         if ((obj1).jeVacsiNez(obj2) < 0) {
@@ -78,7 +84,8 @@ public class ObdlznikPlus implements Porovnatelna {
         }
     }
 
-    public boolean suZhodne(Object objekt1, Object objekt2) {
+    public boolean suZhodne(final Object objekt1,
+final  Object objekt2) {
         Porovnatelna obj1 = (Porovnatelna) objekt1;
         Porovnatelna obj2 = (Porovnatelna) objekt2;
         if ((obj1).jeVacsiNez(obj2) == 0) {

@@ -13,7 +13,8 @@ public class Bird extends Animal{
 
     private int lengthWinds;
 
-    public Bird(String typ, int lengthWinds) {
+    public Bird(final String typ,
+final  int lengthWinds) {
         super(typ);
         this.lengthWinds = lengthWinds;
     }
@@ -32,7 +33,7 @@ public class Bird extends Animal{
      *
      * @param lengthWinds new value of lengthWinds
      */
-    public void setLengthWinds(int lengthWinds) {
+    public void setLengthWinds(final int lengthWinds) {
         this.lengthWinds = lengthWinds;
     }
     

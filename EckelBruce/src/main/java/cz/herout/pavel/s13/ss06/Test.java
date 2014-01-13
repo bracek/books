@@ -12,7 +12,7 @@ import cz.herout.pavel.s13.ss03.Info;
  * @author bracek
  */
 public class Test {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Usecka u = new Usecka(5);
         Obdlznik o = new Obdlznik(2,4);
         Info iu = new Usecka(4);    

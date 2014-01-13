@@ -10,7 +10,7 @@ package sk.edu.gymspmkr.bike;
  */
 public class RunBike {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         
         HorskyBike horsky = new HorskyBike();
         

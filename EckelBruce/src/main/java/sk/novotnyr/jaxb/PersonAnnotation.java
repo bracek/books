@@ -23,7 +23,7 @@ public class PersonAnnotation {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(final Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -31,7 +31,7 @@ public class PersonAnnotation {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
@@ -39,7 +39,7 @@ public class PersonAnnotation {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
@@ -47,7 +47,7 @@ public class PersonAnnotation {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(final float weight) {
         this.weight = weight;
     }
 }

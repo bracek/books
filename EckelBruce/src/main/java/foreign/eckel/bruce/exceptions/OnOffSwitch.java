@@ -39,7 +39,7 @@ public class OnOffSwitch {
     static void f() throws VyjimkaPriVypnuti1, VyjjimkaPriVypnuti2 {
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
             System.out.println("som v try");
             prep.zapnuto();

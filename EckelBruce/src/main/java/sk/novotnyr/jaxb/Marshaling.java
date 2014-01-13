@@ -24,7 +24,7 @@ public class Marshaling {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws PropertyException, JAXBException {
+    public static void main(final String[] args) throws PropertyException, JAXBException {
 
         // vytvoríme kontext JAXB
         JAXBContext jaxbContext = null;

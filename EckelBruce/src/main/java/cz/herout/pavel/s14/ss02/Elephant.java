@@ -13,7 +13,8 @@ public class Elephant extends Animal{
     
     private int lenghtTrunk;
 
-    public Elephant(String type, int lenghtTrunk) {
+    public Elephant(final String type,
+final  int lenghtTrunk) {
         super(type);
         this.lenghtTrunk = lenghtTrunk;
     }
@@ -40,7 +41,7 @@ public class Elephant extends Animal{
      *
      * @param lenghtTrunk new value of lenghtTrunk
      */
-    public void setLenghtTrunk(int lenghtTrunk) {
+    public void setLenghtTrunk(final int lenghtTrunk) {
         this.lenghtTrunk = lenghtTrunk;
     }
 

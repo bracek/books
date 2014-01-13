@@ -13,7 +13,7 @@ public abstract  class Animal {
 
     private String type;
     
-    public Animal(String typ) {
+    public Animal(final String typ) {
         this.type = typ;
     }
     
@@ -40,7 +40,7 @@ public abstract  class Animal {
      *
      * @param typ new value of typ
      */
-    public void setTyp(String typ) {
+    public void setTyp(final String typ) {
         this.type = typ;
     }
 

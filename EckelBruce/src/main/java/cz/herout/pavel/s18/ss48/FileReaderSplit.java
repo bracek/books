@@ -16,7 +16,7 @@ import java.io.IOException;
  */
 public class FileReaderSplit {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(final String[] args) throws FileNotFoundException, IOException {
 
         String aktDir = System.getProperty("user.dir");
         String finalPath = aktDir + "/src/cz/herout/pavel/s18/ss48/";

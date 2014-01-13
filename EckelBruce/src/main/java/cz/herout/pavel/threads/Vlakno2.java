@@ -21,7 +21,7 @@ public class Vlakno2 extends Thread {
         System.out.println(ReadV1.suma);
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         String aktDir = System.getProperty("user.dir");
         String finalPath = aktDir + "/src/cz/herout/pavel/threads/";

@@ -15,7 +15,7 @@ public class Vector implements Info{
 
     protected  int length;
 
-    public Vector(int length) {
+    public Vector(final int length) {
         this.length = length;
     }
     
@@ -34,7 +34,7 @@ public class Vector implements Info{
      *
      * @param length new value of length
      */
-    public void setLength(int length) {
+    public void setLength(final int length) {
         this.length = length;
     }
 

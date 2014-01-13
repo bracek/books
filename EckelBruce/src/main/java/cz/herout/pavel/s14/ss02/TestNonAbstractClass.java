@@ -11,7 +11,7 @@ package cz.herout.pavel.s14.ss02;
  * @author bracek
  */
 public class TestNonAbstractClass {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Animal[] animals    = new Animal[6];
         for (int i = 0; i < animals.length; i++) {
 //            Animal animal = animals[i];
