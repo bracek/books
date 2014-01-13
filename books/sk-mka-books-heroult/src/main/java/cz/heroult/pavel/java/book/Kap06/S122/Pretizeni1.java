@@ -16,16 +16,16 @@ package cz.heroult.pavel.java.book.Kap06.S122;
 /////////////////////////////////////////////////////////////////
 
 public class Pretizeni1 {
-  static int ctverec(int i) {
+  static int ctverec(final int i) {
     return i * i;
   }
 
-  static double ctverec(double i) {
+  static double ctverec(final double i) {
     return i * i;
   }
 
   //  static long ctverec(int i) { // chyba
-  static long ctverec(long i) {
+  static long ctverec(final long i) {
     return i * i;
   }
 

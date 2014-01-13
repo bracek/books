@@ -16,14 +16,14 @@ package cz.heroult.pavel.java.book.Kap06.S121;
 /////////////////////////////////////////////////////////////////
 
 public class Hodnotou {
-  static int zmena(int i) {
-    i++;
-    return i;
-  }
+	static int zmena(int i) {
+		i++;
+		return i;
+	}
 
-  public static void main(final String[] args) {
-    int j, k = 4;
-    j = zmena(k);
-    System.out.println("k = " + k + ", j = " + j);
-  }
+	public static void main(final String[] args) {
+		int j, k = 4;
+		j = zmena(k);
+		System.out.println("k = " + k + ", j = " + j);
+	}
 }

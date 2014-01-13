@@ -16,7 +16,7 @@ package cz.heroult.pavel.java.book.Kap06.S117;
 /////////////////////////////////////////////////////////////////
 
 public class Metody3 {
-  static void tiskPenez(int koruny) {
+  static void tiskPenez(final int koruny) {
     System.out.println("Cena: " + koruny + " Kc");
   }
 

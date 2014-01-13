@@ -16,11 +16,11 @@ package cz.heroult.pavel.java.book.Kap06.S120;
 /////////////////////////////////////////////////////////////////
 
 public class Konverze {
-  static int konv1(double d) {    
+  static int konv1(final double d) {    
     return (int) d;                
   }                               
 
-  static double konv2(int d) {
+  static double konv2(final int d) {
     return d;
   }
   public static void main(final String[] args) {

@@ -20,7 +20,7 @@ public class Komentare {
   /* metoda vypo�te obsah kruhu
      parametrem je polom�r kru�nice
      -- typick� koment�� p�es v�ce ��dek */
-  static double obsahKruhu(double r) {
+  static double obsahKruhu(final double r) {
     return r * r * Math.PI;
   }
 

@@ -16,11 +16,12 @@ package cz.heroult.pavel.java.book.Kap06.S123;
 /////////////////////////////////////////////////////////////////
 
 public class Pretizeni2 {
-  static void tiskPenez(int koruny) {
+  static void tiskPenez(final int koruny) {
     System.out.println("Cena: " + koruny + ",-- Kc");
   }
 
-  static void tiskPenez(int koruny, int halere) {
+  static void tiskPenez(final int koruny,
+final  int halere) {
     System.out.println("Cena: " + koruny + "," + halere + " Kc");
   }
 

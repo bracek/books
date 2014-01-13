@@ -16,7 +16,8 @@ package cz.heroult.pavel.java.book.Kap06.S115;
 /////////////////////////////////////////////////////////////////
 
 public class Metody1 {
-  static int max(int a, int b) {
+  static int max(final  int a,
+final  int b) {
     if (a > b)
       return (a);
     else
