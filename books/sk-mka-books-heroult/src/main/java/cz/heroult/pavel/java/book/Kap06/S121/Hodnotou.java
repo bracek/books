@@ -16,7 +16,7 @@ package cz.heroult.pavel.java.book.Kap06.S121;
 /////////////////////////////////////////////////////////////////
 
 public class Hodnotou {
-	static int zmena(final int i) {
+	static int zmena(int i) {
 		i++;
 		return i;
 	}

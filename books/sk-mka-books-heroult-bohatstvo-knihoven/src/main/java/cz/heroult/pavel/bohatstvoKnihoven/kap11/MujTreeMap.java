@@ -16,67 +16,68 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap11;
 //                                                             //
 /////////////////////////////////////////////////////////////////
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 class VahaKlic implements Comparable<VahaKlic> {
-  double vaha;
-  VahaKlic(double vaha) { this.vaha = vaha; }
+	double vaha;
 
-  public String toString() {
-    return Double.toString(vaha);
-  }
+	VahaKlic(double vaha) {
+		this.vaha = vaha;
+	}
 
-  public boolean equals(final Object o) {
-    if (o == this)
-      return true;
-    if (o instanceof VahaKlic == false)
-      return false;
-    boolean stejnaVaha = (vaha == ((VahaKlic) o).vaha);
-    return stejnaVaha;
-  }
+	public String toString() {
+		return Double.toString(vaha);
+	}
 
-  public int hashCode() {
-    return (int) vaha;
-  }
+	public boolean equals(final Object o) {
+		if (o == this)
+			return true;
+		if (o instanceof VahaKlic == false)
+			return false;
+		boolean stejnaVaha = (vaha == ((VahaKlic) o).vaha);
+		return stejnaVaha;
+	}
 
-  public int compareTo(final VahaKlic vk) {
-    return ((int) (this.vaha - vk.vaha));
-  }
+	public int hashCode() {
+		return (int) vaha;
+	}
+
+	public int compareTo(final VahaKlic vk) {
+		return ((int) (this.vaha - vk.vaha));
+	}
 }
 
 class VahovyKomparator implements Comparator<VahaKlic> {
-  public int compare(final VahaKlic vk1,
-final  VahaKlic vk2) {
-    return (int) (vk1.vaha - vk2.vaha);
-  }
+	public int compare(final VahaKlic vk1, final VahaKlic vk2) {
+		return (int) (vk1.vaha - vk2.vaha);
+	}
 }
 
 public class MujTreeMap {
-  static void praceSMapou(final TreeMap<VahaKlic,
-final  String> tm) {
-    String s;
-    Comparator<? super VahaKlic> c = tm.comparator();
-    if (c == null) {
-      s = "prirozene razeni";
-    }
-    else {
-      s = c.getClass().getName();
-    }
-    System.out.println("Komparator: " + s);
+	static void praceSMapou(final TreeMap<VahaKlic, String> tm) {
+		String s;
+		Comparator<? super VahaKlic> c = tm.comparator();
+		if (c == null) {
+			s = "prirozene razeni";
+		} else {
+			s = c.getClass().getName();
+		}
+		System.out.println("Komparator: " + s);
 
-    tm.put(new VahaKlic(85), "Pavel");
-    tm.put(new VahaKlic(105), "Venca");
-    tm.put(new VahaKlic(74), "Karel");
-    System.out.println("Mapa: " + tm);
-    VahaKlic v = tm.lastKey();
-    System.out.println("Nejvice vazi: "
-                       + v + "=" + tm.get(v));
-    SortedMap<VahaKlic, String> pom = tm.tailMap(new VahaKlic(85));
-    System.out.println("Dva nejtezsi: " + pom + "\n");
-  }
+		tm.put(new VahaKlic(85), "Pavel");
+		tm.put(new VahaKlic(105), "Venca");
+		tm.put(new VahaKlic(74), "Karel");
+		System.out.println("Mapa: " + tm);
+		VahaKlic v = tm.lastKey();
+		System.out.println("Nejvice vazi: " + v + "=" + tm.get(v));
+		SortedMap<VahaKlic, String> pom = tm.tailMap(new VahaKlic(85));
+		System.out.println("Dva nejtezsi: " + pom + "\n");
+	}
 
-  public static void main(final String[] args) {
-    praceSMapou(new TreeMap<VahaKlic, String>());
-    praceSMapou(new TreeMap<VahaKlic, String>(new VahovyKomparator()));
-  }
+	public static void main(final String[] args) {
+		praceSMapou(new TreeMap<VahaKlic, String>());
+		praceSMapou(new TreeMap<VahaKlic, String>(new VahovyKomparator()));
+	}
 }

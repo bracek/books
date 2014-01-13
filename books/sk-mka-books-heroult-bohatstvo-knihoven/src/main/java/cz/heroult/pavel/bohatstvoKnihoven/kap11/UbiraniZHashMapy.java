@@ -16,7 +16,11 @@ package cz.heroult.pavel.bohatstvoKnihoven.kap11;
 //                                                             //
 /////////////////////////////////////////////////////////////////
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 class HashoVaha {
   double HashoVaha;
@@ -42,7 +46,7 @@ class HashoVaha {
 
 public class UbiraniZHashMapy {
   static void naplneniMapyATisk(final HashMap<String,
-final  HashoVaha> hm) {
+ HashoVaha> hm) {
     hm.clear();
     for (int i = 1;  i <= 4;  i++) {
       String jmeno = "Robot" + i;
