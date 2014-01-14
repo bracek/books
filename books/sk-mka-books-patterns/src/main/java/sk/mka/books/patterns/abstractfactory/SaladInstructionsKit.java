@@ -2,7 +2,7 @@ package sk.mka.books.patterns.abstractfactory;
 
 /**
  * The SaladInstructionsKit is used to illustrate the Abstract Factory Pattern of GoF. The SaladInstructionsKit 
- * defines a factory type that list operations for creating the set of related abstract product types.
+ * defines a factory type that list operations for creating the set of related  product types.
  * 
  * @author Andre Mare
  */
