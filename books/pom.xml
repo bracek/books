@@ -8,7 +8,6 @@
 	<artifactId>sk-mka-books</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<name>books</name>
 	<url>http://maven.apache.org</url>
 
@@ -51,7 +50,6 @@
 						<encoding>windows-1250</encoding>
 					</configuration>
 				</plugin>
-
 
 			</plugins>
 		</pluginManagement>
