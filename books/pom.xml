@@ -24,7 +24,6 @@
 		<module>sk-mka-books-head-first</module>
 	</modules>
 
-
 	<build>
 		<pluginManagement>
 			<plugins>
