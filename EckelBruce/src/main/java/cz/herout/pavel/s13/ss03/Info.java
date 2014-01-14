@@ -10,7 +10,7 @@ package cz.herout.pavel.s13.ss03;
  * @author bracek
  */
 public interface Info {
-    public void kdoJsem();
+     void kdoJsem();
 
  
 

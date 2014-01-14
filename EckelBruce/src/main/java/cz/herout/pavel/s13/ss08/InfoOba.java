@@ -13,6 +13,6 @@ import cz.herout.pavel.s13.ss04.InfoDalsi;
  * @author bracek
  */
 public interface InfoOba extends Info, InfoDalsi{
-    public static final int POCET = 3;
+     static final int POCET = 3;
 
 }

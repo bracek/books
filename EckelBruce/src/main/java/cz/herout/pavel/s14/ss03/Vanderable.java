@@ -10,6 +10,6 @@ package cz.herout.pavel.s14.ss03;
  * @author bracek
  */
 public interface Vanderable {
-    public void listingWeight();
+     void listingWeight();
 }
 

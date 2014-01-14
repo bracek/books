@@ -10,9 +10,9 @@ package sk.me;
  */
 interface PersonInterface {
 
-    public static final int a = 3;
+     static final int a = 3;
 
-    public String getName();
+     String getName();
 
-    public void setName(final String name);
+     void setName(final String name);
 }

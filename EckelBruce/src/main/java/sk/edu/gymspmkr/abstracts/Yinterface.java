@@ -11,8 +11,8 @@ package sk.edu.gymspmkr.abstracts;
  */
 interface Yinterface {
     
-    public void iAm();
+     void iAm();
     
-    public void setUp();
+     void setUp();
 
 }
