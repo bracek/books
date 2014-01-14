@@ -16,5 +16,5 @@ package cz.heroult.pavel.java.book.Kap13.S252;
 /////////////////////////////////////////////////////////////////
 
 public interface InfoOba extends Info, InfoDalsi {
-  public int POCET = 3;
+   int POCET = 3;
 }

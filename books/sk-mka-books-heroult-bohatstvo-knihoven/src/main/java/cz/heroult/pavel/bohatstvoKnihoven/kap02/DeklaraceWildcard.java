@@ -4,19 +4,19 @@ import java.util.*;
 
 interface E {
 
-    public void tiskni();
+     void tiskni();
 }
 
 class ABS {
 
-    public void tiskni() {
+     void tiskni() {
         System.out.println("A");
     }
 }
 
-public class DeklaraceWildcard {
+ class DeklaraceWildcard {
 
-    public static void main(final String[] args) {
+     static void main(final String[] args) {
 //        ArrayList<?> ar1 = new ArrayList<?>();  
 //        ArrayList<? extends T> ar2 = new ArrayList<? extends T>();
 //        ArrayList<? extends A> ar3 = new ArrayList<? extends A>();

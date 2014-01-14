@@ -6,5 +6,5 @@ package com.javapapers.designpattern.decorator;
  * Time: 9:18 AM
  */
 public interface Icecream {
-  public String makeIcecream();
+   String makeIcecream();
 }

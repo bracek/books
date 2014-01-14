@@ -16,5 +16,5 @@ package cz.heroult.pavel.java.book.Kap13.S246;
 /////////////////////////////////////////////////////////////////
 
 public interface Info {
-  public void kdoJsem();
+   void kdoJsem();
 }

@@ -16,52 +16,56 @@ package cz.heroult.pavel.java.book.Kap14.S259;
 /////////////////////////////////////////////////////////////////
 
 interface Vazitelny {
-  public void vypisHmotnost();
+	void vypisHmotnost();
 }
 
 class Clovek implements Vazitelny {
-  int vaha;
-  String profese;
+	int vaha;
+	String profese;
 
-  Clovek(String povolani, int tiha) {
-    profese = new String(povolani);
-    vaha = tiha;
-  }
+	Clovek(String povolani, int tiha) {
+		profese = new String(povolani);
+		vaha = tiha;
+	}
 
-  public void vypisHmotnost() {
-    System.out.println(profese + ": " + vaha);
-  }
+	public void vypisHmotnost() {
+		System.out.println(profese + ": " + vaha);
+	}
 
-  public int getHmotnost() { return vaha; }
+	int getHmotnost() {
+		return vaha;
+	}
 }
 
 class Kufr implements Vazitelny {
-  int vaha;
+	int vaha;
 
-  Kufr(int tiha) { vaha = tiha; }
+	Kufr(int tiha) {
+		vaha = tiha;
+	}
 
-  public void vypisHmotnost() {
-    System.out.println("kufr: " + vaha);
-  }
+	public void vypisHmotnost() {
+		System.out.println("kufr: " + vaha);
+	}
 }
 
-public class PolymRozhra {
-  public static void main(final String[] args) {
-    int vahaLidi = 0;
-    Vazitelny[] kusJakoKus = new Vazitelny[3];
+class PolymRozhra {
+	static void main(final String[] args) {
+		int vahaLidi = 0;
+		Vazitelny[] kusJakoKus = new Vazitelny[3];
 
-    kusJakoKus[0] = new Clovek("programator", 100);
-    kusJakoKus[1] = new Kufr(20);
-    kusJakoKus[2] = new Clovek("modelka", 51);
+		kusJakoKus[0] = new Clovek("programator", 100);
+		kusJakoKus[1] = new Kufr(20);
+		kusJakoKus[2] = new Clovek("modelka", 51);
 
-    System.out.println("CD - individualni pristup");
-    for (int i = 0;  i < kusJakoKus.length;  i++) {
-      kusJakoKus[i].vypisHmotnost();
-      if (kusJakoKus[i] instanceof Clovek == true) {
-//        vahaLidi += kusJakoKus[i].getHmotnost();
-        vahaLidi += ((Clovek) kusJakoKus[i]).getHmotnost();
-      }
-    }
-    System.out.println("Ziva vaha: " + vahaLidi);
-  }
+		System.out.println("CD - individualni pristup");
+		for (int i = 0; i < kusJakoKus.length; i++) {
+			kusJakoKus[i].vypisHmotnost();
+			if (kusJakoKus[i] instanceof Clovek == true) {
+				// vahaLidi += kusJakoKus[i].getHmotnost();
+				vahaLidi += ((Clovek) kusJakoKus[i]).getHmotnost();
+			}
+		}
+		System.out.println("Ziva vaha: " + vahaLidi);
+	}
 }

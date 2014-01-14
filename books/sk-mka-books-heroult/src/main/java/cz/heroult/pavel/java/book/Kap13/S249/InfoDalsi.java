@@ -16,5 +16,5 @@ package cz.heroult.pavel.java.book.Kap13.S249;
 /////////////////////////////////////////////////////////////////
 
 public interface InfoDalsi {
-  public void vlastnosti();
+   void vlastnosti();
 }

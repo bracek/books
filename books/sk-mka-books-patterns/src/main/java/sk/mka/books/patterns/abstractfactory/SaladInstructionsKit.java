@@ -8,8 +8,8 @@ package sk.mka.books.patterns.abstractfactory;
  */
 public interface SaladInstructionsKit {
 
-    public TomatoInstructions createTomatoInstructions();
+     TomatoInstructions createTomatoInstructions();
 
-    public CucumberInstructions createCucumberInstructions();
+     CucumberInstructions createCucumberInstructions();
 } // class SaladInstructionsKit
 
