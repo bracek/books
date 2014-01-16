@@ -71,11 +71,11 @@
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <module name="JavadocMethod">
+        <!--<module name="JavadocMethod">
             <property name="logLoadErrors" value="true"/>
             <property name="suppressLoadErrors" value="true"/>
             <property name="allowMissingParamTags" value="true"/>
-        </module>
+        </module>-->
         <module name="JavadocType">
             <property name="scope" value="public"/>
         </module>
