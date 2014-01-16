@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-	<component name="EclipseCodeFormatter">
-		<option name="defaultSettings" value="true" />
-		<option name="enableJSFormatting" value="true" />
-		<option name="id" value="1371734224213" />
-		<option name="name" value="default" />
-		<option name="pathToConfigFileJS"
-			value="$USER_HOME$/Desktop/infotel/servers/servers-master/resources/etc/infotel-servers-eclipse-formatter.xml" />
-		<option name="pathToConfigFileJava"
-			value="$USER_HOME$/Desktop/infotel/servers/servers-master/resources/etc/infotel-servers-eclipse-formatter.xml" />
-		<option name="selectedJavaProfile" value="infotel-servers-eclipse-formatter" />
-		<option name="selectedJavaScriptProfile" value="infotel-servers-eclipse-formatter" />
-	</component>
-	<component name="EntryPointsManager">
-		<entry_points version="2.0" />
-	</component>
-	<component name="IdProvider" IDEtalkID="412CDBCA1023306C6C1942162F102DC4" />
-	<component name="MavenProjectsManager">
-		<option name="originalFiles">
-			<list>
-				<option value="$PROJECT_DIR$/pom.xml" />
-			</list>
-		</option>
-	</component>
-	<component name="ProjectRootManager" version="2"
-		languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true"
-		project-jdk-name="1.7" project-jdk-type="JavaSDK">
-		<output url="file://$PROJECT_DIR$/classes" />
-	</component>
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="enableJSFormatting" value="true" />
+    <option name="id" value="1371734224213" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJS" value="$USER_HOME$/Desktop/infotel/servers/servers-master/resources/etc/infotel-servers-eclipse-formatter.xml" />
+    <option name="pathToConfigFileJava" value="$USER_HOME$/Desktop/infotel/servers/servers-master/resources/etc/infotel-servers-eclipse-formatter.xml" />
+    <option name="selectedJavaProfile" value="infotel-servers-eclipse-formatter" />
+    <option name="selectedJavaScriptProfile" value="infotel-servers-eclipse-formatter" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="IdProvider" IDEtalkID="412CDBCA1023306C6C1942162F102DC4" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
 </project>
 

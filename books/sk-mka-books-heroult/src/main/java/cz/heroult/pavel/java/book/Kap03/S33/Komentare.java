@@ -17,23 +17,25 @@ package cz.heroult.pavel.java.book.Kap03.S33;
 
 public class Komentare {
 
-  /* metoda vypo�te obsah kruhu
-     parametrem je polom�r kru�nice
-     -- typick� koment�� p�es v�ce ��dek */
-  static double obsahKruhu(final double r) {
-    return r * r * Math.PI;
-  }
+	/*
+	 * metoda vypo�te obsah kruhu parametrem je polom�r kru�nice -- typick�
+	 * koment�� p�es v�ce ��dek
+	 */
 
-  public static void main(final String[] args) {
-    int utrata;
-    int pocetPiv = 5;
+	static double obsahKruhu(final double r) {
+		return r * r * Math.PI;
+	}
 
-    utrata = pocetPiv * 15;  // typick� jedno��dkov� koment��
-    System.out.println("Utrata = " + utrata);
+	public static void main(final String[] args) {
+		int utrata;
+		final int pocetPiv = 5;
 
-    utrata = pocetPiv * /* 15 */ 20;  /* 15 je pro des�tku */
-    System.out.println("Utrata = " + utrata);
+		utrata = pocetPiv * 15; // typick� jedno��dkov� koment��
+		System.out.println("Utrata = " + utrata);
 
-    System.out.println("Obsah kruhu o polomeru 5 = " + obsahKruhu(5.0));
-  }
+		utrata = pocetPiv * /* 15 */20; /* 15 je pro des�tku */
+		System.out.println("Utrata = " + utrata);
+
+		System.out.println("Obsah kruhu o polomeru 5 = " + obsahKruhu(5.0));
+	}
 }
