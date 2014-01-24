@@ -22,7 +22,7 @@ import java.io.*;
 
 
 class KomparatorCeskychAkcentovanychStringu implements Comparator {
-  private Collator col = Collator.getInstance(new Locale("cs", "CZ"));
+  private Collator col = Collator.getInstance(new Locale("cs","CZ"));
 
   public int compare(final Object o1,
 final  Object o2) {
